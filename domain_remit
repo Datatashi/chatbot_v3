@@ -1,0 +1,95 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - remit
+  - remit_acc
+  - remit_channel
+  - remit_open_acc
+  - remit_access
+  - remit_transfer
+  - remit_withdrawal
+  - remit_addition
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+############################################################
+
+  utter_remit:
+  - text: "It is a platform initiated by the RMA to facilitate non-resident Bhutanese to conveniently apply for foreign currency account with an authorized bank in Bhutan"
+
+  utter_directors:
+  - text: "The directors of the Bank of Bhutan are the following:\n\n
+  Corporate Affairs Director: Mr. Tshering Tenzin\n\n
+  Operation Director  : Miss Karma Dema\n\n
+  Credit Director : Mr. Prem Moktan\n\n
+  ICT Director : Mr. Tsewang Dorji"
+
+  utter_remit_acc:
+  - text: "You can get\n\n
+   
+   Non-resident Bhutanese Foreign Currency Account (NRBFC)- Saving Deposit\n\n
+   Non-resident Bhutanese Ngultrum Account (NRBNC)- Saving and Fixed Deposit"
+
+  utter_remit_channel:
+  - text: "For NRBFC:\n\n Internet Banking, International debit card
+    For NRBNC:\n\n Internet Banking, International and Domestic Debit cards, mBOB"
+
+  utter_remit_open_acc:
+  - text: "Apply online through [RemitBhutan](www.rma.org.bt)\n\n
+    RMA verifies and forwards to our Bank\n\n
+    Bank processes and open your FC account"
+
+  utter_remit_access:
+  - text: "You can view your account balance and transaction details through internet banking and mobile banking."
+
+  utter_remit_transfer:
+  - text: "You can use the following modes to transfer money:\n\n
+
+    SWIFT- Thorough our [correspondent banks](https://www.bob.bt/international-banking/correspondent-banks/)\n\n
+    International money transfer partners- IME remit and EXPRESS MONEY"
+
+  utter_remit_withdrawal:
+  - text: "a) Withdrawal of convertible currency in cash is not permitted from your Foreign Currency
+account. Cash withdrawal in Ngultrum only will be allowed.\n\n
+
+b) Foreign currency in your account can be utilized for meeting the cost of import of goods and
+services against import license/invoices and on the expenses relating to Travel, Studies,
+Business and Medical treatment as per the Foreign Exchange Rules and Regulations of the RMA
+in force."
+
+  utter_remit_addition:
+  - text: "1. Minimum balance retention in the account is not mandatory.\n\n
+
+2. You are permitted full repatriation of the principal amount remitted in the currency of remittance.\n\n
+
+3. You are permitted to maintain the foreign currency account upon return to the country permanently.\n\n
+
+4. You can earn Interest on your Foreign Currency Account."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
