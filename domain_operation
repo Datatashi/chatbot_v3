@@ -1,0 +1,381 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - op_flex_recur_deposit
+  - op_flex_max
+  - op_flex_doc
+  - op_flex_alternative
+  - op_flex_amount
+  - op_flex_premature
+  - op_flex_installment
+  - op_flex_min
+  - op_flex_open
+  - op_flex_best
+  - op_fixed
+  - op_fixed_who
+  - op_fixed_freq
+  - op_fixed_tenure
+  - op_fixed_loan
+  - op_fixed_doc
+  - op_partial
+  - op_fixed_premature
+  - op_fixed_mature
+  - op_fixed_mbob
+  - op_cheque
+  - op_cheque_nobalance
+  - op_cheque_booklet
+  - op_cheque_cost
+  - op_cheque_personal
+  - op_cheque_multi
+  - op_cheque_cancel
+  - op_cheque_validity
+  - op_cheque_validate
+  - op_cheque_draft
+  - op_saving_who
+  - op_saving_how
+  - op_saving_what
+  - op_saving_interest_rate
+  - op_saving_calculate
+  - op_saving_problema
+  - op_saving_change
+  - op_saving_multi
+  - op_saving_cost
+  - op_saving_min
+  - op_young_saver_mean
+  - op_young_saver_what
+  - op_young_saver_who
+  - op_young_saver_interest_rate
+  - op_young_saver_calculate
+  - op_young_saver_document
+  - op_young_saver_cost
+  - op_young_saver_min
+  - op_fixed_multi_option
+  - op_young_saver_atm
+  - op_empower_savings_what
+  - op_empower_savings_doc
+  - op_empower_savings_why
+  - op_simple_recur_what
+  - op_simple_recur_installment
+  - op_simple_recur_doc
+  - op_simple_recur_alternative
+  - op_simple_recur_tenure
+  - op_simple_recur_monthly_installment
+  - op_simple_recur_premature
+  - op_simple_recur_default
+  - op_remittance_what_outward
+  - op_remittance_how
+  - op_remittance_limit_out
+  - op_remittance_cost_out
+  - op_remittance_exchangerate
+  - op_remittance_credit_out
+  - op_remittance_what_in
+  - op_remittance_information
+  - op_remittance_limit_in
+  - op_remittance_cost_in
+  - op_remittance_credit_in
+  - op_remittance_personal
+  - op_location
+  - op_opening
+  - op_history
+  - op_md
+
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+#########################################
+
+  utter_op_flex_recur_deposit:
+  - text: "It is a type of Recurring deposit where customers will have greater flexibility with their savings. You can choose to deposit a minimum of Nu.100 per month and can increase this amount anytime you wish. If you have more spare money to save, you can deposit funds multiple times in a month or either choose not to make any deposits in a month."
+
+
+  utter_op_flex_max:
+  - text: "You can choose to deposit Nu.20,000/- per installment or maximum of Nu.20,000/ in a month."
+
+  utter_op_flex_doc:
+  - text: "Please click [the required documents](https://www.bob.bt/personal-banking/save-deposits/flexi-recurring-deposit/) to know"
+
+  utter_op_flex_alternative:
+  - text: "Yes, you can open via using mBoB and internet banking. Call our toll free contact center at 1095 in case for guidance."
+
+  utter_op_flex_amount:
+  - text: "No, however, you can choose to open two Flexi RD of Nu.20, 000 installments each."
+
+  utter_op_flex_premature:
+  - text: "Yes but you will be given 1% less of interest than actual interest of the year."
+
+  utter_op_flex_installment:
+  - text: "No, minimum installment is Nu.100/-"
+
+  utter_op_flex_min:
+  - text: "No, minimum tenure one can open is 1 year"
+
+  utter_op_flex_open:
+  - text: "It will take not more than 10 minutes."
+
+  utter_op_flex_best:
+  - text: "It is the best way to save considering the convenient it has."
+
+  utter_op_fixed:
+  - text: "Kind of saving with a known rate of return for your choice of term, so you know exactly what your investment will be worth"
+
+  utter_op_fixed_who:
+  - text: "Please click [open FD](https://www.bob.bt/personal-banking/save-deposits/fixed-deposits-account/);"
+
+  utter_op_fixed_freq:
+  - text: "The interest payout frequency can be either monthly, quarterly, half-yearly, yearly or on maturity."
+
+  utter_op_fixed_tenure:
+  - text: "10 years"
+
+  utter_op_fixed_loan:
+  - text: "Yes but in the form of OD subject to 90%"
+
+  utter_op_fixed_doc:
+  - text: "Please click [the documents required](https://www.bob.bt/personal-banking/save-deposits/fixed-deposits-account/)"
+
+  utter_op_partial:
+  - text: "If a customer wants to premature his fixed deposit, the entire fixed deposit need not be broken and he can premature only the amount he requires."
+
+  utter_op_fixed_premature:
+  - text: "Fixed deposits can be broken before the maturity date. The interest rate will be 1 % less than the applicable rate of interest the FD has been kept with the Bank. However, if the FD is closed before 91 days the customer will not be eligible for interest."
+
+  utter_op_fixed_mature:
+  - text: "No, it will automatically be credited the balance proceed to the saving account."
+
+  utter_op_fixed_mbob:
+  - text: "Yes, you can open using mBoB and internet banking."
+
+  utter_op_cheque:
+  - text: "You can visit any of the nearest branches and avail the cheque."
+
+  utter_op_cheque_nobalance:
+  - text: "This is a crime and it will be legally dealt. For the bounce cheque, Nu.300 plus 10% of the cheque amount will be deducted as penalties."
+
+  utter_op_cheque_booklet:
+  - text: "You have to submit the cheque requisition leaflet to the branch and get it issued new booklet."
+
+  utter_op_cheque_cost:
+  - text: "Yes, but for the first issue it is free and the actual cost will be charged for the subsequent issue."
+
+  utter_op_cheque_personal:
+  - text: "Yes, you can and the actual cost will be deducted."
+
+  utter_op_cheque_multi:
+  - text: "Yes, you can avail as many booklets at one time but the cheque leaves must be used until its exhausted."
+
+  utter_op_cheque_cancel:
+  - text: "Only the applicant can cancel the bankers cheque with two signature on the bank of the cheque."
+
+  utter_op_cheque_validity:
+  - text: "It is 6 months"
+
+  utter_op_cheque_validate:
+  - text: "You can revalidate from any of our branch and charge of Nu.100 is levied."
+
+  utter_op_cheque_draft:
+  - text: "Yes, its called multicity cheque/draft on all the branches of State Bank of India."
+
+  utter_op_saving_who:
+  - text: "Savings Deposit Account can be opened by:
+
+Individual, either or survivor, jointly with other individuals, any one or survivor.
+
+Accounts may also be opened for or on behalf of minors under guardianship of nature/court appointed guardian. Parent may also open a joint account with their minor child/children.
+
+Empower saving can be opened only by Individual, either or survivor.
+
+No saving deposit will normally be opened in the name of association/clubs/societies and nonprofit institution. However, only in exceptional cases taking into consideration the nature of deposits, the branch may open upon prior approval from Head Office.
+
+Business organization and government will be permitted to open only staff security deposit and staff welfare account upon approval from Head Office."
+
+  utter_op_saving_how:
+  - text: "To open the saving account the customer must visit the branch personally."
+
+  utter_op_saving_what:
+  - text: "The following facilities are available under saving deposit account:
+    1. SMS alert to primary applicant no
+    2. Internet Banking
+    3. ATM or Domestic Debit Card
+    4. ATM or International Credit Card
+    5. B-Wallet
+    6. Tele banking
+    7. mBoB
+    8. goBoB"
+
+  utter_op_saving_interest_rate:
+  - text: "The prevailing rate of interest on Savings Deposit Account is 4.50% per annum."
+
+  utter_op_saving_calculate:
+  - text: "The interest is paid on monthly basis on simple daily product method with no upper limit on account balance."
+
+
+  utter_op_saving_problema:
+  - text: "Any individual/organization listed under the UN sanctioned list cannot open any type of accounts."
+
+  utter_op_saving_change:
+  - text: "Yes, the interest rate change."
+
+  utter_op_saving_multi:
+  - text: "Yes, one can have multiple account under one CIF."
+
+  utter_op_saving_cost:
+  - text: "Bank recover the charge bi annually Nu.75/- as maintenance fee."
+
+  utter_op_saving_min:
+  - text: "A minimum balance of Nu.500/- to be deposited at time of opening, subsequently balance may be permitted to reduce below Nu 500/-"
+
+  utter_op_young_saver_mean:
+  - text: "Young savers account is opened by minor below the age of 18."
+
+  utter_op_young_saver_what:
+  - text: "1. Service charges are not applicable
+2. Proprietary Card for 15 years and above
+3. Free passbook even for replacement or loss of passbook
+4. FD-Multi option Deposit (MOD)
+5. mBoB"
+
+  utter_op_young_saver_who:
+  - text: "The account will be operated by parents/court appointed guardians."
+
+  utter_op_young_saver_interest_rate:
+  - text: "The prevailing rate of interest on Young Saver Deposit Account is 4.50% per annum."
+
+  utter_op_young_saver_calculate:
+  - text: "The interest is paid on monthly basis on simple daily product method with no upper limit on account balance."
+
+  utter_op_young_saver_document:
+  - text: "
+    1. Citizenship Identity Card Photocopy (parents/Guardian)
+    2. A copy of Health card of the minor
+    3. Two Passport sized photographs of parents/guardian
+    4. Legal stamp
+    5.  Guardian’s declaration form to be filled which is available at the BoBL branch offices."
+
+  utter_op_young_saver_cost:
+  - text: "Service charge are not applicable for maintaining account."
+
+  utter_op_young_saver_min:
+  - text: "A minimum balance of Nu.500/- to be deposited at time of opening, subsequently balance may be permitted to reduce below Nu 500/-"
+
+  utter_op_fixed_multi_option:
+  - text: "FD multi-option deposit is a deposit where the system will open the fixed deposit when the balance reached Nu.100,000 keeping the threshold balance of Nu.10,000."
+
+  utter_op_young_saver_atm:
+  - text: "Young saver account holder can avail Proprietary Card for 15 years and above."
+
+  utter_op_empower_savings_what:
+  - text: "Empower Saving is to onboard the customers into the digital platform through the usage of delivery channel services (mBoB and Internet Banking). Thus, the debit transaction over the bank counter will be charged a minimal fee of Nu.150 per transaction (both cash withdrawal & Transfer transaction)."
+
+  utter_op_empower_savings_doc:
+  - text: "Please click [the required documents](https://www.bob.bt/personal-banking/save-deposits/empower-savings-account/)"
+
+  utter_op_empower_savings_why:
+  - text: " • The rate of interest on Empower Savings Deposit Account is 0.25% per annum higher than the normal Savings account, calculated on daily product basis.
+    • Exempted from charging annual maintenance fee. 
+    • Exempted from charging ATM debit card processing fee."
+
+  utter_op_simple_recur_what:
+  - text: "It is a type of Recurring deposit where customers can save monthly by paying a fixed sum of money every month for a predetermined period. You can have multiple Simple Recurring Deposit account in your name or in joint names with other. "
+
+  utter_op_simple_recur_installment:
+  - text: "Minimum monthly installment is Nu. 100/- and there is no upper limit."
+
+  utter_op_simple_recur_doc:
+  - text: "Please click [the required documents](https://www.bob.bt/personal-banking/save-deposits/simple-recurring-deposit/)"
+
+  utter_op_simple_recur_alternative:
+  - text: "Yes, you can open via using mBoB and internet banking. Call our toll free contact center at 1095 in case for guidance."
+
+  utter_op_simple_recur_tenure:
+  - text: "Minimum tenure is 1 year and maximum is 20 years"
+
+  utter_op_simple_recur_monthly_installment:
+  - text: "• You can create Standing order from your SB account to RD account via mBoB or  submitting a form at the bank
+    • You can visit the bank every month to make a cash deposit in your RD account. "
+
+  utter_op_simple_recur_premature:
+  - text: "Yes but you will be given 1% less of interest than the applicable interest the RD has been kept with the Bank. However, if the RD is closed before 3 months, you will not be eligible for interest."
+
+  utter_op_simple_recur_default:
+  - text: "If you fail to pay monthly installment, a penalty of 1% per installment for each defaulted month will be recovered from the total payable amount."
+
+  utter_op_remittance_what_outward:
+  - text: "Remittances which are being transferred to any part of the world via SWIFT. We remit funds for business, medical, allowances, studies, Imports etc."
+
+  utter_op_remittance_how:
+  - text: "For making an outward remittance, please walk into any Bank of Bhutan branches and initiate the outward remittance by filling up Application for Foreign Outward Remittance specifying the necessary details. 
+In addition to this, you have to provide documentary proof - For documents requirement, you may visit our [website](https://www.bob.bt/wp-content/uploads/2022/08/Documents-required-for-Outward-Remittance-Aug-2022.pdf)or may visit our nearest Branch"
+
+  utter_op_remittance_limit_out:
+  - text: "No limit"
+
+  utter_op_remittance_cost_out:
+  - text: "0.20% (Min. Nu. 100) plus transmission charges of Nu. 500 and intermediary bank charges"
+
+  utter_op_remittance_exchangerate:
+  - text: "T.T selling rate"
+
+
+  utter_op_remittance_credit_out:
+  - text: "Funds will be credited to the beneficiary account within 3 working days."
+
+  utter_op_remittance_what_in:
+  - text: "It is a remittance received through SWIFT transfer. All foreign currency Inward fund transfer can be transferred from our correspondent Bank and other banks via swift routing through our Correspondent Bank
+To remit funds in foreign currency from any part of the world (excluding India) to Bhutan, please request your Bank to remit the money through our Correspondent Bank to save charges and for safer transactions."
+
+  utter_op_remittance_information:
+  - text: "Please click [required details to be provided for each foreign currency](https://www.bob.bt/business-banking/remittance/foreign-currency-remittance/)"
+
+  utter_op_remittance_limit_in:
+  - text: "No limit"
+
+  utter_op_remittance_cost_in:
+  - text: "No"
+
+  utter_op_remittance_credit_in:
+  - text: "Depends on the remitting bank procedures"
+
+  utter_op_remittance_personal:
+  - text: "Yes, you must produce source of fund and documentary proof."
+
+
+  utter_op_location:
+  - text: "Our Corporate office is located at Norzin Lam, Thimphu, Bhutan."
+
+  utter_op_opening:
+  - text: "The Bank is opening at 9.00 AM from Monday to Friday."
+
+
+  utter_op_history:
+  - text: "The Bank of Bhutan is the oldest bank in the country started in May 1968. It was the Central Bank of Bhutan till 1982. Today, the largest commercial Bank has 47 branch offices in every Dzongkhag. The Bank started Core Banking Solution in 2009 for ATMs, Internet Banking, POS and Mobile & Agency Banking Services."
+
+  utter_op_md:
+  - text: "The CEO of Bank of Bhutan is Mr Dorji Kadin"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
