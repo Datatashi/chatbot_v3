@@ -1,0 +1,423 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - mbob
+  - mbob_os
+  - mbob_min_os
+  - mbob_charges
+  - mbob_download
+  - mbob_space
+  - mbob_outside
+  - forms
+  - mbob_no_internet
+  - mbob_sim
+  - mbob_online
+  - mbob_start
+  - mbob_pin
+  - m_pin
+  - mbob_wrong_mpin
+  - mbob_unblock_mpin
+  - mbob_mpin_after_block
+  - mpin_forgotten
+  - mbob_tpin
+  - mbob_user
+  - mbob_dzongkha
+  - mbob_link
+  - mbob_joint
+  - mbob_link_joint
+  - mbob_minor
+  - mbob_minor_register
+  - mbob_fingerprint
+  - mbob_services
+  - mbob_details
+  - mbob_func_transfer
+  - mbob_transaction
+  - mbob_pay
+  - mbob_report_transaction
+  - mbob_protect
+  - mbob_stolen
+  - mbob_change
+  - mbob_external
+  - mbob_payment_merchant
+  - mbob_wrong_transfer
+  - mbob_wrong_beneficiary
+  - mbob_report_undue
+  - mbob_why_no_payment
+  - mbob_no_receive
+  - mbob_beneficiary_account_check
+  - mbob_complaint_fail_transfer
+  - mbob_interbank_reverse
+  - mbob_redo_iferror
+  - mbob_userid
+  - mbob_scan_pay
+  - mbob_qr
+  - mbob_interbank_payment
+  - mbob_otherbank_merchant
+  - mbob_qr_blank
+  - mbob_when_scan
+  - mbob_fix_recur
+  - mbob_deduct_recur
+  - mbob_close_term
+  - mbob_termdeposit_not_closed
+  - mbob_renewal_card
+  - mbob_replace_benefit
+  - mbob_donate
+  - mbob_statement
+  - mbob_max_statement
+  - mbob_email
+  - mbob_update_email
+  - mbob_cardless_atm
+  - mbob_cardless_problem
+  - mbob_cardless_withdrawal
+  - mbob_cardless_otherbank
+  - mbob_noaccount_atm
+  - mbob_delink
+  - mbob_los
+  - mbob_loan_account
+  - mbob_airticket
+  - mbob_features
+  - mbob_reward
+  - mbob_transfer_limit
+  - mbob_customer_categories
+  - mbob_thumb
+  - mbob_categories_limit
+  - mbob_categories_interbank
+  - mbob_thumb_online_register
+  - mbob_thumb_doc
+  - mbob_thumb_cardless
+  - mbob_thumb_mpin
+  - mbob_thumb_categories_limit
+  - mbob_thumb_categories
+  - mbob_premiums
+  - mbob_report_stops
+  - mbob_services_recharge
+  - mbob_alarts
+  - mbob_fake
+  - mbob_update
+  - mbob_over_cash
+  - mbob_safety_tips
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+#############################################
+
+  utter_mbob:
+  - text: "mBoB is simple and convenient application to access your bank account on your phone. mBoB is now available on all mobile phones, ranging from character-based mobile phones to the latest smart phones."
+
+
+  utter_mbob_os:
+  - text: "mBoB is available in major operating systems like Android and iOS."
+
+  utter_mbob_min_os:
+  - text: "You can use any mobile device ranging from the simple character-based to the latest smart phones. The mBoB App is supported on andriod version 5 and above and iphone version 11 and above."
+
+  utter_mbob_charges:
+  - text: "Registration is free & there are NO charges for other services as well. However, BoB may choose to apply minimal charges on some services at a later date after notifying the charges in our website www.bob.bt."
+
+  utter_mbob_download:
+  - text: "Always download from authorized stores like Playstore & Appstore respectively. Just type mBoB and search to download and install."
+
+  utter_mbob_space:
+  - text: ""
+
+  utter_mbob_outside:
+  - text: "Yes, from anywhere around the world as long as there is an internet connection."
+
+  utter_forms:
+  - text: "You can download and submit form to open an account with any branch office. Click [DOWNLOAD FORMS](https://www.bob.bt/service-and-support/download-forms/)"
+
+  utter_mbob_no_internet:
+  - text: "Dial *262# from your registered mobile number to avail the service. But this mode of service is available for use within Bhutan only."
+
+  utter_mbob_sim:
+  - text: "As long as you are using the SIM for either Bhutan Telecom or Tcell or as long as you have internet connection in your phone."
+
+  utter_mbob_online:
+  - text: "if your mobile number or email ID is updated in BoB, you can register through mBoB app instantly from anywhere by submitting your Account number, CID number and agreeing to the terms and conditions. You can also visit your prefererd BoB branch office to register for the Service."
+
+  utter_mbob_start:
+  - text: "You will be provided with a user ID and a default password (M-Pin) after registration. The default M-Pin will need to be changed while also need to set up a new T-Pin of your own. On completion, you can start using the service."
+
+  utter_mbob_pin:
+  - text: "M-pin and T-Pin can be any four digit number of your choice. M-Pin is to login to mBoB app while T-Pin is to authentiate and authorize the transaction. You can reset the M-pin and T-pin by pressing forgot my M-pin on mBoB app"
+
+
+  utter_m_pin:
+  - text: "Yes, there is a feature available in mBoB where you can change your M-Pin/T-Pin as and when required at your convenience, the same is available as a post login feature."
+
+  utter_mbob_wrong_mpin:
+  - text: "For security reasons, further access is blocked if M-Pin is used wrongly for three consecutive times."
+
+  utter_mbob_unblock_mpin:
+  - text: "can call 1095 or visit the nearest Branch office for assistance. New M-Pin will have to be reset."
+
+  utter_mbob_mpin_after_block:
+  - text: "security reason, M-Pin will have to reset and same is delivered via registered mobile number/email address after completing the due verification process."
+
+  utter_mpin_forgotten:
+  - text: "Use 'Forgot M-Pin' option available on the login page to reset. OTP will be delivered to registered mobile and email address with the bank."
+
+  utter_mbob_tpin:
+  - text: "login to mBoB app and check for the 'Forgot T-Pin' option available under navigation bar of mBoB home page."
+
+  utter_mbob_user:
+  - text: "You can reset the User ID by pressing Forgot User ID on mBoB app."
+
+
+  utter_mbob_dzongkha:
+  - text: "mBoB app can be accessed in both English & Dzongkha languages."
+
+  utter_mbob_link:
+  - text: "Any types of accounts can be linked in mBoB including pension account and foreign currency account."
+
+  utter_mbob_joint:
+  - text: "Yes, but joint account can be linked to only one mBoB USER with no fund transfer rights."
+
+  utter_mbob_link_joint:
+  - text: "All the signatories to the account are required to visit the branch & submit the account linking form in which their signatures have to be duly attested."
+
+  utter_mbob_minor:
+  - text: "If a minor is above 15 years and have a CID copy, minor can independently operate mBoB based on the written consent from parent/guardian and submitting it to the Branch. If the minor is below 15 years, such account can be linked to parent/guardian with full transaction rights."
+
+  utter_mbob_minor_register:
+  - text: "Yes, but to avail fund transfer rights for a minor account above 15 years, written application should be submitted to the Branch."
+
+  utter_mbob_fingerprint:
+  - text: "Yes, you have to add thumbprint record through your phone settings and need to enable fingerprint login from mBoB app. However, your phone has to support fingerprint to use it as login option."
+
+  utter_mbob_services:
+  - text: "The various services are available, ranging from balance enquiry to account statement, account opening to account closing, recharge services to bill payments, intrabank to interbank fund transfers, scan & pay to remittances, rewards to loan repayments and many more."
+
+  utter_mbob_details:
+  - text: "No, for safety reasons, details are not stored on the mobile device."
+
+  utter_mbob_func_transfer:
+  - text: "You can carry out the following types of Funds transfers:\n
+  
+Transfer to your own accounts in BoB\n
+Transfer to third party accounts in BoB\n
+Transfer to other banks' account in Bhutan"
+
+  utter_mbob_transaction:
+  - text: "No, transaction once initiated and duly completed cannot be canceled or changed."
+
+  utter_mbob_pay:
+  - text: "Yes, you can pay bills for Bhutan Telecom, Tcell, Bhutan Power Corporation, NPPF, Credit Card Bills and many more."
+
+  utter_mbob_report_transaction:
+    - text: "Contact your prefererd BoB branch or call 1095 for assistance."
+
+  utter_mbob_protect:
+    - text: "Perhaps, your entire life savings is right on your phone. Always password protect your phone and never leave them unattended. With tremendous opportunities and possibilities, mobile phones are not free from cyber attacks and physical theft."
+
+  utter_mbob_stolen:
+    - text: "Immediately report the loss of your mobile to your nearest BoB branch or call our contact centre at 1095 with a request to temporarily block the mBoB service."
+
+  utter_mbob_change:
+    - text: "Absolutely no problem - Howver, ensure that your new mobile number is registered & updated with BoB. If you have changed your mobile device, you can continue using the same USER ID, M-Pin and T-Pin from different phone."
+
+  utter_mbob_external:
+    - text: "can access from different phone but only upon validation of OTP, delivered to your registered mobile and email address."
+
+  utter_mbob_payment_merchant:
+    - text: "Scan & Pay is the most popular mode of payment to merchants. It is secure and saves time and reduces error of wrong transfer."
+
+  utter_mbob_wrong_transfer:
+    - text: "ys confirm the beneficiary name and transaction amount in T-Pin page before authorizing the transaction with T-Pin."
+
+  utter_mbob_wrong_beneficiary:
+    - text: "Bank doesn't guarantee the return of the money once transaction is duly completed. The transaction has to be mutually settled between the sender and the receiver."
+
+  utter_mbob_report_undue:
+    - text: "You cannot claim the rights over the wrong amount received into your account. It is morally wrong & as a responsible person, always report to 1095 or visit preferred branch for enquiry and return."
+
+  utter_mbob_why_no_payment:
+    - text: "possible reasons could be that either you have entered invalid beneficiary account number or provided wrong but valid account or could also be due to system related issue."
+
+  utter_mbob_no_receive:
+    - text: "If the account number/bank is correctly provided/selected, such transactions will anyway be received by the beneficiary within one day."
+
+  utter_mbob_beneficiary_account_check:
+    - text: "You can always check your account statement in which the beneficiary account number will be reflected as a narration."
+
+  utter_mbob_complaint_fail_transfer:
+  - text: "Not required, based on the report, such failed transaction will be credited to the beneficiary account within one day. If amount is not received still, you may enquire with beneficiary bank."
+
+  utter_mbob_interbank_reverse:
+  - text: "The interbank transaction will be reversed only when the account you transferred to is invalid, dormant, freezed, in closed status or not permitted by the beneficiary bank."
+
+  utter_mbob_redo_iferror:
+  - text: "Always check mini statement or account balance to confirm the debit before re-initiating the transaction."
+
+  utter_mbob_userid:
+  - text: "Use 'Forgot USER ID' option available on the mBoB login page to retrieve your user ID."
+
+  utter_mbob_scan_pay:
+  - text: "There is no risk of wrong transfer and you will receive SMS alert for the transaction irrespective of the amount."
+
+  utter_mbob_qr:
+  - text: "Not really. You can generate QR code directly through App which is available on the account balance display screen and by clicking on the 'Generate QR' option."
+
+  utter_mbob_interbank_payment:
+  - text: "Yes, will suppot both intra and inter-bank transaction to accept payments."
+
+  utter_mbob_otherbank_merchant:
+  - text: "amount once debited at BoB will never be reversed, such amount if not credited instantly, will be force-credited to merchant's account by respective merchants' bank within a day. Do not re-initiate the payment once debited."
+
+  utter_mbob_qr_blank:
+  - text: "check your mBoB App permission settings and esnure that mBoB App is permitted to access phone camera."
+
+  utter_mbob_when_scan:
+  - text: "As far as possible, you are recommended to use merchant's BoB QR code to pay so that transaction will be seamless & faster. This will be convenient both to the merchant and customer."
+
+  utter_mbob_fix_recur:
+  - text: "you can open recurring and fixed deposit account instantly from mBoB app without having to visit the branches."
+
+  utter_mbob_deduct_recur:
+  - text: "you can open recurring and fixed deposit account instantly from mBoB app without having to visit the branches."
+
+  utter_mbob_close_term:
+    - text: " It is possible. You can instantly close and transfer to your account."
+
+  utter_mbob_termdeposit_not_closed:
+    - text: "If your account is opened before 1st Apri 2016, you have to visit branch to request for closure of such account."
+  utter_mbob_renewal_card:
+    - text: "Yes, you can apply and submit your request."
+
+  utter_mbob_replace_benefit:
+    - text: "If applying from mBoB, the process is simple, convenient, faster and available at a reduced replacement fee."
+
+  utter_mbob_donate:
+    - text: "Covid-19 icon on the app to donate. The process is simple & doesn't require to provide account number manually."
+
+  utter_mbob_statement:
+    - text: "Yes, you can request and get access to your statement instantly. It will be delivered to your registered email with the bank."
+
+  utter_mbob_max_statement:
+    - text: "You, can request statement for the maximum period of three months at an instance for savings, current and overdraft accounts while statement request for loan & recurring deposit account is for the maximum period of one year."
+
+  utter_mbob_email:
+    - text: "When requesting the statement, you will be prompted a message on the app if your email address is not updated with the bank."
+
+  utter_mbob_update_email:
+    - text: "visit your nearest branch and submit completed 'CIF' form or 'mBoB change request' form to update your email address."
+
+  utter_mbob_cardless_atm:
+    - text: "You can use cardless withdrawal service without even having the ATM card from the bank."
+
+  utter_mbob_cardless_problem:
+    - text: "Call 1095 or visit nearest branch to check if your account has been activated for cardless facility. Sometimes, the problem can also be with ATM terminals."
+
+  utter_mbob_cardless_withdrawal:
+    - text: "You can withdraw the maximum of Nu. 15,000 per transaction & Nu. 40,000 per day from ATM and Nu. 10,000 per day from BoBConnect Agents."
+
+  utter_mbob_cardless_otherbank:
+  - text: "Cardless withdrawal service can be availed only from BoB ATM terminal."
+
+  utter_mbob_noaccount_atm:
+  - text: "Yes. On the cardless withdrawal facility in mBoB, select 'Send OTP to different number' option. The person can use OTP to withdraw cash from BoB ATM."
+
+  utter_mbob_delink:
+  - text: "'Manage Account' option available under homepage dashboard to add or delink accounts from mBoB."
+
+  utter_mbob_los:
+  - text: "Yes, but your loan account has to be linked in mBoB."
+
+  utter_mbob_loan_account:
+  - text: "Yes, but your loan account has to be linked in mBoB."
+
+  utter_mbob_airticket:
+  - text: "Yes, you can pay for your Drukair ticket through 'Flight' feature available on the app."
+
+  utter_mbob_features:
+  - text: "Always check for the latest updates in the playstore/Appstore. Also, you can check our official social media pages and also through banners uploaded on mBoB app."
+
+  utter_mbob_reward:
+  - text: "We tend to positively impact the way our customers bank by using mobile banking application. Through reward feature, you can refer mBoB to your circle of friends and families. If they successfully register for mBoB using your referral code, you will get a reward of Nu. 10 for being the agent of change and in contributing to the promotion of cash-less transaction."
+
+  utter_mbob_transfer_limit:
+  - text: "The inter-bank fund transfer limit is the total of Nu. 1,000,000 per day as per Royal Monetary Authority."
+
+  utter_mbob_customer_categories:
+  - text: "The categories of customers are General, Silver, Gold & Thumbprint customers."
+
+  utter_mbob_thumb:
+  - text: "They are customer who has opened account by providing their thumb-print record (not signature)."
+
+  utter_mbob_categories_limit:
+  - text: "Customer in General category can transfer upto Nu. 100,000 in a day, upto Nu. 500,000 per day for Silver category, unlimited transfer for Gold category and Nu. 5,000 only for Thumbprint customers."
+
+  utter_mbob_categories_interbank:
+    - text: "No, these categories are only for fund transfers within BoB account. Interbank limit is set by Royal Monetary Authority. However, for thumbprint customers, the limit is inclusive of inter-bank transactions."
+
+  utter_mbob_thumb_online_register:
+    - text: "No, customer need to personally visit the Branch along with witness."
+
+  utter_mbob_thumb_doc:
+    - text: "Along with the registration form, the documents required are citizenship ID and a legal stamp."
+
+  utter_mbob_thumb_cardless:
+    - text: "No, cardless withdrawal service is not provided."
+
+  utter_mbob_thumb_mpin:
+    - text: "As a security measure, the reset rights directly through App are not provided."
+
+  utter_mbob_thumb_categories_limit:
+    - text: "The category cannot be changed."
+
+  utter_mbob_thumb_categories:
+    - text: "The category cannot be changed."
+
+  utter_mbob_premiums:
+    - text: "You can pay premuims for life and annuity products including loan repayments for RICBL."
+
+  utter_mbob_report_stops:
+    - text: "Always try the following: Turn off and re-enable the mobile internet/restart your phone/update to the latest version of App/switch to mobile data if using wifi/re-install the App. If the issue persist, report to 1095/Branch for further assistance."
+
+  utter_mbob_services_recharge:
+    - text: "Mobile number is your critical information with the bank. Always update if the previously registered number with the bank has been changed. Subscribe for SMS and mBoB facility so that you receive immediate alert for any unauthorized transactions."
+
+  utter_mbob_alarts:
+    - text: "Mobile number is your critical information with the bank. Always update if the previously registered number with the bank has been changed. Subscribe for SMS and mBoB facility so that you receive immediate alert for any unauthorized transactions."
+
+  utter_mbob_fake:
+    - text: "Never believe on payment screenshots but always confirm the receipt through SMS, mini statement or balance enquiry through mBoB app."
+
+  utter_mbob_update:
+  - text: "In most of the cases, update is required when there are new services added while some updates are due to critical patch/security enhancement/a bug fix or due to an improvement in the services."
+
+  utter_mbob_over_cash:
+  - text: "mBoB is fast and convenient while the transactions are traceable & recorded in the system along with amount, date and time of transaction and other details."
+
+  utter_mbob_safety_tips:
+  - text: "Always keep your USER ID, M-Pin and T-Pin secret to yourself. Never share OTPs to anyone.  Periodically change the credentails. Do not save the credentails in the phone. Do not be carried away by the false promises. Password protecting the phone can be added layer of security as well."
+
+###########################
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
