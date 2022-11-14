@@ -1,0 +1,166 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - cards
+  - card_avail_service
+  - card_security
+  - card_avail
+  - card_choose
+  - card_fee
+  - card_amount
+  - card_wait_time
+  - card_debt
+  - card_abroad
+  - card_difference
+  - card_repayment
+  - card_withdraw
+  - card_charges
+  - card_min
+  - card_lose
+  - card_working
+  - card_debit_outside
+  - card_prepaid
+  - card_reload
+  - card_reload_charge
+  - card_balance_claim
+  - card_benefit
+  - card_bill
+  - card_domestic_region
+  - card_max_limit
+  - card_debit_charges
+  - domcard
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+################################################################
+  utter_cards:
+  - text: "Credit Card (International Credit Card, Domestic Credit Card, Corporate Credit Card)"
+
+  utter_card_avail_service:
+  - text: "Generally, All Bhutanese having Citizenship Identity Card and age group between 18 to 70 years are eligible. Additional requirements may apply depending on the type of card. "
+
+  utter_card_security:
+  - text: "Yes. The Bank of Bhutan-issued Visa and MasterCard are secured by EMV chip technology and 3D security. The EMV Chip technology is the latest technology against card I need help.\n
+    - Please can you help me.\n
+    - I have a question.\n
+    - I ve a question.skimming fraud and the 3D security technology protects against online fraud. "
+
+  utter_card_avail:
+  - text: "You must have Saving Accounts maintained with BoB. The debit card application form can be downloaded from https://www.bob.bt/wp-content/uploads/2022/06/Visa-Debit-Card-Application-Form-June-27-2022.pdf	. All documentation requirements are highlighted on page 3 of this form."
+
+  utter_card_choose:
+  - text: "There are three different types of credit cards available so it can be hard to know where to start when deciding which one is right for you. One of the easiest ways to look at it is to consider exactly what you need a credit card for. Please call 1095 or contact us at card_team@bob.br to find out which card suits you best. "
+
+  utter_card_fee:
+  - text: "Yes. Yes, the bank charges a joining fee of Nu. 500.00 per credit card."
+
+  utter_card_amount:
+  - text: "The amount you can borrow with a credit card will depend on your credit limit which is determined according to your repayment capacity with a maximum limit of Nu 150,000/- for domestic credit cards, Nu. equivalent of 4,000 USD for international credit cards and Nu equivalent of the dollar limit approved by RMA for Corporate credit cards.\n
+  The Bank allocates limits based on factors such as your credit score (more on this later), how much available income you have after meeting your regular financial commitments, and whether you have other types of credit, such as a mortgage, loan, or overdraft."
+
+  utter_card_wait_time:
+  - text: "Once you’ve been approved for a credit card, it should be ready within 10 working days. You will need to activate the card once you have received it by calling our Troll Free No. 1095."
+
+  utter_card_debt:
+    - text: "Yes. Unlike with personal loans, there are no penalties if you want to clear your balance early before the due date.
+"
+
+  utter_card_abroad:
+    - text: "Yes, you can, but you will charge a foreign transaction fee of 1.5% every time you spend. You’ll also be charged separately for cash withdrawals and interest is calculated from the time of withdrawal."
+
+  utter_card_difference:
+    - text: "A credit card allows you to borrow money (up to your sanctioned limit) that you repay at a later date, including applicable interest and charges. In comparison, a prepaid card requires you to load up the card with cash in advance and you can then only spend what’s on the card."
+
+  utter_card_repayment:
+    - text: "If you are late or miss a payment altogether, you’ll be charged a fee and the late or missed payment will be noted on your credit report, which could affect your ability to get credit in the future."
+
+  utter_card_withdraw:
+    - text: "Yes – A cash advance fee of 2.5% will be charged for cash withdrawals using credit cards. Additionally, you will be charged interest from the moment you get your money – even if you pay off your balance in full that month. Try to avoid withdrawing cash on a credit card unless it’s an emergency."
+
+  utter_card_charges:
+    - text: "Yes, you will be charged BTN 999.00 annually."
+
+  utter_card_min:
+    - text: "The minimum amount you must repay each month is 25% of your total amount due. While you will be charged interest on the paid amount, your credit score would not be affected."
+
+  utter_card_lose:
+    - text: "If you lose your credit card, please call 1095 and report it as stolen or lost. Your card will then be deactivated, and a replacement card will be ordered. If you are unable to reach us, please email us at card_team@bob.bt. We recommend you call us as your email will be attended to during working hours which is 9:00 AM -5:00 PM on weekdays only."
+
+  utter_card_working:
+  - text: "If you are unable to transact on your card, you may call our Customer Care at 1095 between 8:00 a.m. and 11:00 PM"
+
+  utter_card_debit_outside:
+  - text: "Yes, the Domestic Debit Card is valid in Bhutan, India & Nepal. International Debit Card is Valid Outside Bhutan, India & Nepal.
+Benefits of INR Prepaid Card\n
+    1. No transaction Fees\n
+    2. Accepted in MasterCard enabled ATM and POS Terminals\n
+    3. Manage Card online\n
+    4. Create your own Green PIN\n
+    5. Instant email alert service for every transaction"
+
+  utter_card_prepaid:
+  - text: "Currently, the maximum limit on our INR prepaid card is BTN 50,000/- per month and the card is valid for 2 years."
+
+  utter_card_reload:
+  - text: "You can reload your INR prepaid card using mBoB or by visiting our nearest branch office. Reloading from mBoB is instant, and we recommend that you do so if you need to use your Prepaid Card right away."
+
+  utter_card_reload_charge:
+  - text: "Yes. You will be charged BTN 150/- for every reload you made."
+
+  utter_card_balance_claim:
+  - text: "Please visit our nearest branch office and submit the refund form. Your entire available balance or any amount specified in the form will be refunded back to your savings account. A fee of BTN 150/- will be charged for every refund requested.  The refund form is also available via this link https://www.bob.bt/wp-content/uploads/2021/10/Prepaid-Card-Cancellation-Refund-Form-October-2021.pdf."
+
+  utter_card_benefit:
+  - text: "1. Buy now, pay later, up to 45 days free of interest on the purchase.\n
+    2. Create your own Green PIN\n
+    3. Flexible repayment with a minimum amount of 25% of the monthly outstanding balance\n
+    4. Easy Internet shopping and merchant’s payments\n
+    5. Secured Credit Card eStatement service\n
+    6. Instant email alert service for every transaction"
+
+  utter_card_bill:
+  - text: "There are four easy ways to pay for your Credit Card\n
+    1. mBoB\n
+    2. Cash Payment at BoB Branches nationwide\n
+    3. Internet banking\n
+    4. Auto Debit"
+
+  utter_card_domestic_region:
+  - text: "The Visa Domestic Credit Card can be used to make payments at merchant POS outlets, ATM withdrawals, and online purchases in Bhutan, India, and Nepal only."
+
+  utter_card_max_limit:
+  - text: "Your Domestic credit card can have a maximum limit of Nu. 150,000/- and the Card is valid of 3 Years."
+
+  utter_card_debit_charges:
+  - text: "You can visit [BoB website](https://www.bob.bt/personal-banking/card/domestic-debit-card/)"
+
+  utter_domcard:
+  - text: "Please visit [DOMESTIC CREDIT CARD] (https://www.bob.bt/personal-banking/card/domestic-credit-card/) for more information"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
