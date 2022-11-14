@@ -1,0 +1,175 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+####################################################
+- story: cards
+  steps:
+  - intent: cards
+  - action: utter_cards
+
+- story: card_avail_service
+  steps:
+  - intent: card_avail_service
+  - action: utter_card_avail_service
+
+- story: card_security
+  steps:
+  - intent: card_security
+  - action: utter_card_security
+
+
+- story: card_avail
+  steps:
+  - intent: card_avail
+  - action: utter_card_avail
+
+- story: card_choose
+  steps:
+  - intent: card_choose
+  - action: utter_card_choose
+
+- story: card_fee
+  steps:
+  - intent: card_fee
+  - action: utter_card_fee
+
+- story: card_amount
+  steps:
+  - intent: card_amount
+  - action: utter_card_amount
+
+- story: card_wait_time
+  steps:
+  - intent: card_wait_time
+  - action: utter_card_wait_time
+
+- story: card_debt
+  steps:
+  - intent: card_debt
+  - action: utter_card_debt
+
+- story: card_abroad
+  steps:
+  - intent: card_abroad
+  - action: utter_card_abroad
+
+- story: card_difference
+  steps:
+  - intent: card_difference
+  - action: utter_card_difference
+
+
+- story: card_repayment
+  steps:
+  - intent: card_repayment
+  - action: utter_card_repayment
+
+- story: card_withdraw
+  steps:
+  - intent: card_withdraw
+  - action: utter_card_withdraw
+
+- story: card_charges
+  steps:
+  - intent: card_charges
+  - action: utter_card_charges
+
+
+- story: card_min
+  steps:
+  - intent: card_min
+  - action: utter_card_min
+
+- story: card_lose
+  steps:
+  - intent: card_lose
+  - action: utter_card_lose
+
+- story: card_working
+  steps:
+  - intent: card_working
+  - action: utter_card_working
+
+- story: card_debit_outside
+  steps:
+  - intent: card_debit_outside
+  - action: utter_card_debit_outside
+
+- story: card_prepaid
+  steps:
+  - intent: card_prepaid
+  - action: utter_card_prepaid
+
+- story: card_reload
+  steps:
+  - intent: card_reload
+  - action: utter_card_reload
+
+
+- story: card_reload_charge
+  steps:
+  - intent: card_reload_charge
+  - action: utter_card_reload_charge
+
+- story: card_balance_claim
+  steps:
+  - intent: card_balance_claim
+  - action: utter_card_balance_claim
+
+- story: card_benefit
+  steps:
+  - intent: card_benefit
+  - action: utter_card_benefit
+
+
+- story: card_bill
+  steps:
+  - intent: card_bill
+  - action: utter_card_bill
+
+- story: card_domestic_region
+  steps:
+  - intent: card_domestic_region
+  - action: utter_card_domestic_region
+
+- story: card_max_limit
+  steps:
+  - intent: card_max_limit
+  - action: utter_card_max_limit
+
+- story: card_debit_charges
+  steps:
+  - intent: card_debit_charges
+  - action: utter_card_debit_charges
+
+- story: domcard
+  steps:
+  - intent: domcard
+  - action: utter_domcard
