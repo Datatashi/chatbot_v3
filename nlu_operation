@@ -1,0 +1,427 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+###################################
+- intent: op_flex_recur_deposit
+  examples: |
+    - What is Flexi Recurring Deposit?
+
+- intent: op_flex_max
+  examples: |
+    - What is the maximum installment I can choose to deposit in a month?
+
+- intent: op_flex_doc
+  examples: |
+    -  What are the documents required to open flexi recurring deposit?
+
+- intent: op_flex_alternative
+  examples: |
+    - Can you suggest any alternative ways to open Flexi Recurring Deposit? 
+
+- intent: op_flex_amount
+  examples: |
+    - Can I deposit Nu.40, 000 in a month?
+
+- intent: op_flex_premature
+  examples: |
+    - Can I premature Flexi RD?
+
+- intent: op_flex_installment
+  examples: |
+    - Can I deposit Nu.10 as an installment?
+
+- intent: op_flex_min
+  examples: |
+    - Can open Flexi RD for 6 months?
+
+- intent: op_flex_open
+  examples: |
+    - How long it will take to open Flexi RD from the counter in you branch?
+
+- intent: op_flex_best
+  examples: |
+    - Is Flexi the best way to save?
+
+- intent: op_fixed
+  examples: |
+    - What is fixed deposit?
+    
+
+- intent: op_fixed_who
+  examples: |
+    - Who all can open FD?
+
+- intent: op_fixed_freq
+  examples: |
+    - What is the frequency of interest payout?
+
+- intent: op_fixed_tenure
+  examples: |
+    - What is the maximum tenure for FD?
+
+- intent: op_fixed_loan
+  examples: |
+    - Can I avail loan against FD?
+
+- intent: op_fixed_doc
+  examples: |
+    - What are documents required for me to open FD?
+
+- intent: op_partial
+  examples: |
+    - What is partial withdrawal?
+
+- intent: op_fixed_premature
+  examples: |
+    - Can I premature FD?
+
+- intent: op_fixed_mature
+  examples: |
+    - Do I have to come to bank at the time of maturity?
+    
+
+- intent: op_fixed_mbob
+  examples: |
+    - Can I have my FD opened using mBoB?
+
+- intent: op_cheque
+  examples: |
+    - How can I avail cheque for my SB account?
+
+- intent: op_cheque_nobalance
+  examples: |
+    - What if I issue a cheque without balance?
+
+- intent: op_cheque_booklet
+  examples: |
+    - How can I avail second and subsequent cheque booklet?
+
+- intent: op_cheque_cost
+  examples: |
+    - Do I have to pay for availing cheque booklet?
+
+- intent: op_cheque_personal
+  examples: |
+    - Can I have personalized cheque book?
+
+- intent: op_cheque_multi
+  examples: |
+    - Can the bank issue multiple booklets at one go?
+
+- intent: op_cheque_cancel
+  examples: |
+    - How can I cancel the bankers cheque?
+    
+
+- intent: op_cheque_validity
+  examples: |
+    - What is the validity of the Bankers Cheque?
+
+- intent: op_cheque_validate
+  examples: |
+    - How can I re-validate the bankers cheque?
+
+- intent: op_cheque_draft
+  examples: |
+    - Can the bank issue draft on the banks in India?
+
+- intent: op_saving_who
+  examples: |
+    - Who can open saving account?
+
+- intent: op_saving_how
+  examples: |
+    - How to open saving account?
+
+- intent: op_saving_what
+  examples: |
+    - What are the facilities offered while opening saving account?
+
+- intent: op_saving_interest_rate
+  examples: |
+    - What is the saving deposit interest rate provided?
+
+- intent: op_saving_calculate
+  examples: |
+    - How is the saving interest rate calculated?
+    
+
+- intent: op_saving_problema
+  examples: |
+    - Who cannot open saving deposit account?
+
+- intent: op_saving_change
+  examples: |
+    - Do saving interest rate change?
+
+- intent: op_saving_multi
+  examples: |
+    - Can I have multiple saving account?
+
+- intent: op_saving_cost
+  examples: |
+    - Do the bank charges for maintaining saving account?
+
+- intent: op_saving_min
+  examples: |
+    - What is the minimum balance to be maintained in the saving account?
+
+- intent: op_young_saver_mean
+  examples: |
+    - What do you mean by young saver?
+
+- intent: op_young_saver_what
+  examples: |
+    - What are the features available in young saver?
+
+- intent: op_young_saver_who
+  examples: |
+    - Can he operate the accounts or the guardian have to operate the accounts?
+    
+
+- intent: op_young_saver_interest_rate
+  examples: |
+    - What is the young saver interest rate provided?
+
+- intent: op_young_saver_calculate
+  examples: |
+    - How is the young saver interest rate calculated?
+
+- intent: op_young_saver_document
+  examples: |
+    - What are the documents required for opening Young saver account?
+
+- intent: op_young_saver_cost
+  examples: |
+    - Do the bank charges for maintaining account?
+
+- intent: op_young_saver_min
+  examples: |
+    - What is the minimum balance to be maintained in the Young saver account?
+
+- intent: op_fixed_multi_option
+  examples: |
+    - What do you mean by FD multi-option deposit?
+
+- intent: op_young_saver_atm
+  examples: |
+    - Can the young saver get the ATM card?
+
+- intent: op_empower_savings_what
+  examples: |
+    - What is an Empower Savings Bank account?
+    
+
+- intent: op_empower_savings_why
+  examples: |
+    - What are the benefits of Empower Savings Bank Account?
+
+- intent: op_simple_recur_what
+  examples: |
+    - What is Simple Recurring Deposit?
+
+- intent: op_simple_recur_installment
+  examples: |
+    - What is the minimum and maximum installment I can choose to deposit in a month?
+
+- intent: op_simple_recur_doc
+  examples: |
+    - What are the documents required to open Simple Recurring Deposit?
+
+- intent: op_simple_recur_alternative
+  examples: |
+    - Can you suggest any alternative ways to open Simple Recurring Deposit?
+
+- intent: op_simple_recur_tenure
+  examples: |
+    - What is the minimum and maximum tenure to open Simple RD?
+
+- intent: op_simple_recur_monthly_installment
+  examples: |
+    - How can I deposit the monthly installment to my RD account?
+
+- intent: op_simple_recur_premature
+  examples: |
+    - Can I premature Simple RD?
+    
+
+- intent: op_simple_recur_default
+  examples: |
+    - What will happen to my RD account if I default in paying the installment? 
+
+- intent: op_remittance_what_outward
+  examples: |
+    - What is an Outward Remittance?
+
+- intent: op_remittance_how
+  examples: |
+    - How can I transfer the remittance?
+
+- intent: op_remittance_limit_out
+  examples: |
+    - What is the limit for making an outward remittance?
+
+- intent: op_remittance_cost_out
+  examples: |
+    - What are the charges of outward remittance?
+
+- intent: op_remittance_exchangerate
+  examples: |
+    - What exchange rate shall be applicable for outward remittance?
+
+- intent: op_remittance_credit_out
+  examples: |
+    - When can the outward remitted funds be credited to the beneficiary account?
+
+- intent: op_remittance_what_in
+  examples: |
+    - What is an inward Remittance?
+    
+
+- intent: op_remittance_information
+  examples: |
+    - What information should I provide to my remittance counterpart?
+
+- intent: op_remittance_limit_in
+  examples: |
+    - What is the limit for inward remittance?
+
+- intent: op_remittance_cost_in
+  examples: |
+    - Does BOB charge for inward Remittance?
+
+- intent: op_remittance_credit_in
+  examples: |
+    - When will the fund be credited to my account?
+
+- intent: op_remittance_personal
+  examples: |
+    - Is high value remittance for personal are monitored?
+
+- intent: op_location
+  examples: |
+    - where is BoB located?
+    - what is the address of BOB?
+    - Is BoB located at Norzin Lam?
+    - where is thimphu branch office?
+    - Thimphu Branch office location.
+
+- intent: op_opening
+  examples: |
+    - when is the bank opening?
+    - opening time
+    - time to open
+    - office open
+    - counter open
+    - branch opening
+    - branch open hour
+    - bank open time
+    - open bank
+    - when is bank opening tomorrow?
+    - when is the bank opening in weekdays?
+    - opening hour.
+    - open
+
+- intent: op_history
+  examples: |
+    - what is the history of the Bank?
+    - the first bank start?
+    - when was the bank inaugurated?
+    - who commission the bank.
+    - story of the bank.
+
+- intent: op_md
+  examples: |
+    - who is the md of bob?
+    - who is the ceo?
+    - who is the ceo of bank of bhutan?
+    - the boss of bank of bhutan.
