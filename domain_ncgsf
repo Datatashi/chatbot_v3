@@ -1,0 +1,94 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - ncgs_explain
+  - ncgs_govt_guar
+  - ncgs_guar_period
+  - ncgs_debt_ratio
+  - ncgs_eli
+  - ncgs_biz
+  - ncgs_apply
+  - ncgs_part
+  - ncgs_rate
+  - ncgs_same
+  - ncgsf
+  - ncgs_support
+  - ncgs_contact
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+#######################################################################
+  utter_ncgs_explain:
+  - text: "The National Credit Guarantee Scheme (NCGS) is a counter cyclical policy measure during the COVID-19 situation to stimulate investments through enhanced access to finance. The Government will guarantee a portion of the loan under the scheme."
+
+  utter_govt_guar:
+  - text: "The Guarantee will be limited to debt financing of the project. NCGS coverage will not exceed Nu. 30 million."
+
+  utter_guar_period:
+  - text: "The guarantee period will not exceed a maximum of three years."
+
+  utter_debt_ratio:
+  - text: "The Debt to Equity Ratio under the NCGS will be 90:10, which is significantly lower than the existing 75:25. However, for start-ups under CSI category, equity requirement will be exempted."
+
+  utter_ncgs_eli:
+  - text: "All aspiring Bhutanese desiring to start new projects or upgrade existing projects, under the category of Cottage and Small, Medium and Large industries."
+
+  utter_ncgs_biz:
+  - text: "This Scheme is available to eligible business of large, medium and CSI, including primary producer, which falls under the category of productive sector. The definition of productive sectors and full details of the eligibility criteria are available through the NCGS website and the participating Bank websites."
+
+  utter_ncgs_apply:
+  - text: "The NCGS is accessible by direct application to participating Banks. The Banks will start receiving application from October 23, 2020."
+
+  utter_ncgs_part:
+   - text: "The Bank of Bhutan, Bhutan Development Bank and National CSI Development Bank will participate in the NCGS from the launch."
+
+  utter_ncgs_rate:
+  - text: "The interest rates will be applicable as follows:\n\n
+
+a) Cottage & Small industries:\n\n
+
+7% during gestation period; and 8 % after commercial operation.\n\n
+
+b) Medium & Large industries:\n\n
+
+8.75% during gestation period; and 9.75 % after commercial operation"
+
+  utter_ncgs_same:
+  - text: "A separate loan application form is available for loans under the NCGS, which will be made available on the Banks’ websites before October 23, 2020."
+
+  utter_ncgsf:
+  - text: "NCGSF is one-stop shop for NCGS related support and information."
+
+  utter_ncgs_support:
+  - text: "In addition to facilitating the guarantee approval, the NCGSF will support project development guidance; facilitate clearances and approval for business establishment; and smooth implementation of the projects under the NCGS."
+
+  utter_ncgs_contact:
+  - text: "The NCGSF is located in Chubachu, opposite of the Tarayana Complex, Tourism Council of Bhutan Office. Till permanent lines are established, you can contact us on 17341733 (Ugyen), 17587762 (Namgyal) and 77106677(Yeshi)."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
