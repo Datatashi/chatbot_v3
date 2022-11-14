@@ -1,0 +1,150 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+##############################################################
+- intent: remit
+  examples: |
+    - what is remit bhutan?
+    - I want know about remit.
+    - remit
+
+- intent: remit_acc
+  examples: |
+    - what are types of account in remit bhutan?
+    - Types of account you can open through remit bhutan.
+    - what kind of account with remit bhutan.
+    - account type in remit bhutan.
+    - remit bhutan accounts.
+
+- intent: remit_channel
+  examples: |
+    - What delivery channel facilities are available under Remit Bhutan account?
+    - Different delivery channel for remit bhutan account.
+    - remit bhutan delivery channel.
+
+- intent: remit_channel
+  examples: |
+    - What delivery channel facilities are available under Remit Bhutan account?
+    - Different delivery channel for remit bhutan account.
+    - remit bhutan delivery channel.
+
+- intent: remit_open_acc
+  examples: |
+    - How to open Account through Remit Bhutan?
+    - remit bhutan account opening.
+    - opening remit account
+
+- intent: remit_access
+  examples: |
+    - How to access your REMITBHUTAN account?
+    - remit bhutan access
+    - I can't access remit bhutan account.
+    - I have problem with remit bhutan.
+
+- intent: remit_transfer
+  examples: |
+    - How to Transfer money from abroad into your REMITBHUTAN account?
+    - remit bhutan transfer money from abroad.
+    - abroad transfer money to remit bhutan account.
+    - abroad to remit bhutan.
+
+- intent: remit_withdrawal
+  examples: |
+    - What are the withdrawal facilities from the foreign currency account?
+    - remit bhutan facilities.
+    - withdrawal facilities for the remit bhutan.
+    - abroad sending money withdrawal facility.
+
+- intent: remit_addition
+  examples: |
+    - What additional incentives are available under the NRB Account?
+    - NBR additional facilities.
