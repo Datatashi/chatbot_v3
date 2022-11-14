@@ -1,0 +1,70 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+##########################################################
+- story: gobob_download
+  steps:
+  - intent: gobob_download
+  - action: utter_gobob_download
+
+- story: gobob_register
+  steps:
+  - intent: gobob_register
+  - action: utter_gobob_register
+
+- story: gobob_features
+  steps:
+  - intent: gobob_features
+  - action: utter_gobob_features
+
+- story: gobob_benefit
+  steps:
+  - intent: gobob_benefit
+  - action: utter_gobob_benefit
+
+- story: gobob_mbob
+  steps:
+  - intent: gobob_mbob
+  - action: utter_gobob_mbob
+
+- story: gobob_customers
+  steps:
+  - intent: gobob_customers
+  - action: utter_gobob_customers
+
+- story: gobob_cost
+  steps:
+  - intent: gobob_cost
+  - action: utter_gobob_cost
+
+- story: gobob_security
+  steps:
+  - intent: gobob_security
+  - action: utter_gobob_security
