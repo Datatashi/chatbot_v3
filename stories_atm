@@ -1,0 +1,76 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+###############################################################
+
+- story: atmfacilities
+  steps:
+  - intent: atmfacilities
+  - action: utter_atmfacilities
+
+- story: atmavail
+  steps:
+  - intent: atmavail
+  - action: utter_atmavail
+
+- story: atmeligibility
+  steps:
+  - intent: atmeligibility
+  - action: utter_atmeligibility
+
+- story: atmcharges
+  steps:
+  - intent: atmcharges
+  - action: utter_atmcharges
+
+- story: atmreceive
+  steps:
+  - intent: atmreceive
+  - action: utter_atmreceive
+
+- story: atm_lost
+  steps:
+  - intent: atm_lost
+  - action: utter_atm_lost
+
+- story: atmreplace
+  steps:
+  - intent: atmreplace
+  - action: utter_atmreplace
+
+- story: atmwithdraw
+  steps:
+  - intent: atmwithdraw
+  - action: utter_atmwithdraw
+
+- story: atmfast
+  steps:
+  - intent: atmfast
+  - action: utter_atmfast
