@@ -1,0 +1,168 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+###############################################################
+- intent: ncgs_explain
+  examples: |
+    - What is National Credit Guarantee Scheme (NCGS)?
+    - please explain NCGS
+    - meaning of NCGS
+
+- intent: ncgs_govt_guar
+  examples: |
+    - How much will the Government Guarantee?
+    - what is government guarantee?
+    - what guarantee by government?
+
+- intent: ncgs_guar_period
+  examples: |
+    - What is the guarantee period?
+    - How long is guarantee?
+
+- intent: ncgs_debt_ratio
+  examples: |
+    - What is the Debt to Equity Ratio to avail loans under NCGS?
+    - what is ratio for ncgs?
+
+- intent: ncgs_eli
+  examples: |
+    - Who will be eligible for NCGS?
+    - Who are eligible for NCGS?
+    - Eligibility for NCGS
+
+- intent: ncgs_biz
+  examples: |
+    - What kind of businesses are eligible for the Scheme?
+    - What business are allow under the NCGS scheme.
+    - What all business under scheme NCGS?
+
+- intent: ncgs_apply
+  examples: |
+    - How can businesses apply for the Scheme?
+    - businesses apply form.
+    - businesses to get in ncgs.
+    
+    
+
+- intent: ncgs_part
+  examples: |
+    - Which Banks are participating in the Scheme?
+    - What Banks are in ncgs.
+
+- intent: ncgs_rate
+  examples: |
+    - What is the interest rate applicable for NCGS?
+    - how much interest rate for NCGS?
+
+- intent: ncgs_same
+  examples: |
+    - Do we use the same loan application to apply for the NCGS?
+    - where is application for ncgs?
+
+- intent: ncgsf
+  examples: |
+    - What is National Credit Guarantee Support Facility (NCGSF)?
+    - what is NCGSF?
+    - meaning of NCGSF?
+    
+
+- intent: ncgs_support
+  examples: |
+    - What kind of support will the NCGSF provide?
+    - Do you support NCGSF provide?
+    - Do you NCGSF provide support?
+
+- intent: ncgs_contact
+  examples: |
+    - How can I contact the NCGSF?
+    - where to contact the NCGSF?
+    - contact person NCGSF?
