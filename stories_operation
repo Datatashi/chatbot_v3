@@ -1,0 +1,423 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+##############################################
+
+- story: op_flex_recur_deposit
+  steps:
+  - intent: op_flex_recur_deposit
+  - action: utter_op_flex_recur_deposit
+
+- story: op_flex_max
+  steps:
+  - intent: op_flex_max
+  - action: utter_op_flex_max
+
+- story: op_flex_doc
+  steps:
+  - intent: op_flex_doc
+  - action: utter_op_flex_doc
+
+- story: op_flex_alternative
+  steps:
+  - intent: op_flex_alternative
+  - action: utter_op_flex_alternative
+
+- story: op_flex_amount
+  steps:
+  - intent: op_flex_amount
+  - action: utter_op_flex_amount
+
+- story: op_flex_premature
+  steps:
+  - intent: op_flex_premature
+  - action: utter_op_flex_premature
+
+- story: op_flex_installment
+  steps:
+  - intent: op_flex_installment
+  - action: utter_op_flex_installment
+
+- story: op_flex_min
+  steps:
+  - intent: op_flex_min
+  - action: utter_op_flex_min
+
+- story: op_flex_open
+  steps:
+  - intent: op_flex_open
+  - action: utter_op_flex_open
+
+- story: op_flex_best
+  steps:
+  - intent: op_flex_best
+  - action: utter_op_flex_best
+
+
+- story: op_fixed
+  steps:
+  - intent: op_fixed
+  - action: utter_op_fixed
+
+- story: op_fixed_who
+  steps:
+  - intent: op_fixed_who
+  - action: utter_op_fixed_who
+
+- story: op_fixed_freq
+  steps:
+  - intent: op_fixed_freq
+  - action: utter_op_fixed_freq
+
+- story: op_fixed_tenure
+  steps:
+  - intent: op_fixed_tenure
+  - action: utter_op_fixed_tenure
+
+- story: op_fixed_loan
+  steps:
+  - intent: op_fixed_loan
+  - action: utter_op_fixed_loan
+
+- story: op_fixed_doc
+  steps:
+  - intent: op_fixed_doc
+  - action: utter_op_fixed_doc
+
+- story: op_partial
+  steps:
+  - intent: op_partial
+  - action: utter_op_partial
+
+- story: op_fixed_premature
+  steps:
+  - intent: op_fixed_premature
+  - action: utter_op_fixed_premature
+
+- story: op_fixed_mature
+  steps:
+  - intent: op_fixed_mature
+  - action: utter_op_fixed_mature
+
+- story: op_fixed_mbob
+  steps:
+  - intent: op_fixed_mbob
+  - action: utter_op_fixed_mbob
+
+
+- story: op_cheque
+  steps:
+  - intent: op_cheque
+  - action: utter_op_cheque
+
+- story: op_cheque_nobalance
+  steps:
+  - intent: op_cheque_nobalance
+  - action: utter_op_cheque_nobalance
+
+- story: op_cheque_booklet
+  steps:
+  - intent: op_cheque_booklet
+  - action: utter_op_cheque_booklet
+
+- story: op_cheque_cost
+  steps:
+  - intent: op_cheque_cost
+  - action: utter_op_cheque_cost
+
+- story: op_cheque_personal
+  steps:
+  - intent: op_cheque_personal
+  - action: utter_op_cheque_personal
+
+- story: op_cheque_multi
+  steps:
+  - intent: op_cheque_multi
+  - action: utter_op_cheque_multi
+
+- story: op_cheque_cancel
+  steps:
+  - intent: op_cheque_cancel
+  - action: utter_op_cheque_cancel
+
+- story: op_cheque_validity
+  steps:
+  - intent: op_cheque_validity
+  - action: utter_op_cheque_validity
+
+- story: op_cheque_validate
+  steps:
+  - intent: op_cheque_validate
+  - action: utter_op_cheque_validate
+
+- story: op_cheque_draft
+  steps:
+  - intent: op_cheque_draft
+  - action: utter_op_cheque_draft
+
+
+- story: op_saving_who
+  steps:
+  - intent: op_saving_who
+  - action: utter_op_saving_who
+
+- story: op_saving_how
+  steps:
+  - intent: op_saving_how
+  - action: utter_op_saving_how
+
+- story: op_saving_what
+  steps:
+  - intent: op_saving_what
+  - action: utter_op_saving_what
+
+- story: op_saving_interest_rate
+  steps:
+  - intent: op_saving_interest_rate
+  - action: utter_op_saving_interest_rate
+
+- story: op_saving_calculate
+  steps:
+  - intent: op_saving_calculate
+  - action: utter_op_saving_calculate
+
+- story: op_saving_problema
+  steps:
+  - intent: op_saving_problema
+  - action: utter_op_saving_problema
+
+- story: op_saving_change
+  steps:
+  - intent: op_saving_change
+  - action: utter_op_saving_change
+
+- story: op_saving_multi
+  steps:
+  - intent: op_saving_multi
+  - action: utter_op_saving_multi
+
+- story: op_saving_cost
+  steps:
+  - intent: op_saving_cost
+  - action: utter_op_saving_cost
+
+- story: op_saving_min
+  steps:
+  - intent: op_saving_min
+  - action: utter_op_saving_min
+
+
+- story: op_young_saver_mean
+  steps:
+  - intent: op_young_saver_mean
+  - action: utter_op_young_saver_mean
+
+- story: op_young_saver_what
+  steps:
+  - intent: op_young_saver_what
+  - action: utter_op_young_saver_what
+
+- story: op_young_saver_who
+  steps:
+  - intent: op_young_saver_who
+  - action: utter_op_young_saver_who
+
+- story: op_young_saver_interest_rate
+  steps:
+  - intent: op_young_saver_interest_rate
+  - action: utter_op_young_saver_interest_rate
+
+- story: op_young_saver_calculate
+  steps:
+  - intent: op_young_saver_calculate
+  - action: utter_op_young_saver_calculate
+
+- story: op_young_saver_document
+  steps:
+  - intent: op_young_saver_document
+  - action: utter_op_young_saver_document
+
+- story: op_young_saver_cost
+  steps:
+  - intent: op_young_saver_cost
+  - action: utter_op_young_saver_cost
+
+- story: op_young_saver_min
+  steps:
+  - intent: op_young_saver_min
+  - action: utter_op_young_saver_min
+
+- story: op_fixed_multi_option
+  steps:
+  - intent: op_fixed_multi_option
+  - action: utter_op_fixed_multi_option
+
+- story: op_young_saver_atm
+  steps:
+  - intent: op_young_saver_atm
+  - action: utter_op_young_saver_atm
+
+
+- story: op_empower_savings_what
+  steps:
+  - intent: op_empower_savings_what
+  - action: utter_op_empower_savings_what
+
+- story: op_empower_savings_doc
+  steps:
+  - intent: op_empower_savings_doc
+  - action: utter_op_empower_savings_doc
+
+- story: op_empower_savings_why
+  steps:
+  - intent: op_empower_savings_why
+  - action: utter_op_empower_savings_why
+
+- story: op_simple_recur_what
+  steps:
+  - intent: op_simple_recur_what
+  - action: utter_op_simple_recur_what
+
+- story: op_simple_recur_installment
+  steps:
+  - intent: op_simple_recur_installment
+  - action: utter_op_simple_recur_installment
+
+- story: op_simple_recur_doc
+  steps:
+  - intent: op_simple_recur_doc
+  - action: utter_op_simple_recur_doc
+
+- story: op_simple_recur_alternative
+  steps:
+  - intent: op_simple_recur_alternative
+  - action: utter_op_simple_recur_alternative
+
+- story: op_simple_recur_tenure
+  steps:
+  - intent: op_simple_recur_tenure
+  - action: utter_op_simple_recur_tenure
+
+- story: op_simple_recur_monthly_installment
+  steps:
+  - intent: op_simple_recur_monthly_installment
+  - action: utter_op_simple_recur_monthly_installment
+
+- story: op_simple_recur_premature
+  steps:
+  - intent: op_simple_recur_premature
+  - action: utter_op_simple_recur_premature
+
+- story: op_simple_recur_default
+  steps:
+  - intent: op_simple_recur_default
+  - action: utter_op_simple_recur_default
+
+- story: op_remittance_what_outward
+  steps:
+  - intent: op_remittance_what_outward
+  - action: utter_op_remittance_what_outward
+
+
+- story: op_remittance_how
+  steps:
+  - intent: op_remittance_how
+  - action: utter_op_remittance_how
+
+- story: op_remittance_limit_out
+  steps:
+  - intent: op_remittance_limit_out
+  - action: utter_op_remittance_limit_out
+
+- story: op_remittance_cost_out
+  steps:
+  - intent: op_remittance_cost_out
+  - action: utter_op_remittance_cost_out
+
+- story: op_remittance_exchangerate
+  steps:
+  - intent: op_remittance_exchangerate
+  - action: utter_op_remittance_exchangerate
+
+- story: op_remittance_credit_out
+  steps:
+  - intent: op_remittance_credit_out
+  - action: utter_op_remittance_credit_out
+
+- story: op_remittance_what_in
+  steps:
+  - intent: op_remittance_what_in
+  - action: utter_op_remittance_what_in
+
+- story: op_remittance_information
+  steps:
+  - intent: op_remittance_information
+  - action: utter_op_remittance_information
+
+- story: op_remittance_limit_in
+  steps:
+  - intent: op_remittance_limit_in
+  - action: utter_op_remittance_limit_in
+
+- story: op_remittance_cost_in
+  steps:
+  - intent: op_remittance_cost_in
+  - action: utter_op_remittance_cost_in
+
+- story: op_remittance_credit_in
+  steps:
+  - intent: op_remittance_credit_in
+  - action: utter_op_remittance_credit_in
+
+
+- story: op_remittance_personal
+  steps:
+  - intent: op_remittance_personal
+  - action: utter_op_remittance_personal
+
+- story: op_location
+  steps:
+  - intent: op_location
+  - action: utter_op_location
+
+- story: op_opening
+  steps:
+  - intent: op_opening
+  - action: utter_op_opening
+
+- story: op_history
+  steps:
+  - intent: op_history
+  - action: utter_op_history
+
+- story: op_md
+  steps:
+  - intent: op_md
+  - action: utter_op_md
