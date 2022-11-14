@@ -1,0 +1,90 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - gobob_download
+  - gobob_register
+  - gobob_features
+  - gobob_benefit
+  - gobob_mbob
+  - gobob_customers
+  - gobob_cost
+  - gobob_security
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+################################################################
+  utter_gobob_download:
+  - text: "goBoB is a virtual wallet powered by Bank of Bhutan Limited through which a user can store his or her money for future online/offline transactions such as making utility bill payments and merchant payments. Its main objective is to achieve greater financial inclusion, promote cashless transactions and to bring every citizen into the financial ecosystem."
+
+  utter_gobob_register:
+  - text: "Always download goBoB app from authorized stores like PlayStore & AppStore. Just type “goBoB” and search to download and install."
+
+  utter_gobob_features:
+  - text: "With the goBoB, you can do the followings:
+
+    \tPass Book – Balance Enquiry\n  
+    \tGenerate Statement\n
+    \tAdd Money from Bank\n
+    \tAdd Money from Cards\n
+    \tSend Money to any BoB Accounts\n
+    \tPay Money through your Contacts\n
+    \tPay Money via Beneficiary\n
+    \tRequest and Send Money\n
+    \tMake QR payment to any Bank’s merchants\n
+    \tTop up your BT numbers\n
+    \tSplit Bills\n
+    \tRefer goBoB to your friend and get rewards"
+
+  utter_gobob_benefit:
+  - text: "You do not need to have Bank accounts;\n
+    Enjoy the convenience of Merchant payment without carrying your wallet;\n
+    Get instant in-app notification for any amount and transactions."
+
+  utter_gobob_mbob:
+  - text: "1. Simple and Instant Registration:\n
+1. In goBoB, customer can register with valid mobile no. You do not need to have Bank account. Whereas, customer should have a saving account to register for mBoB\n
+2. Target customer:\n
+Can facilitate seamless payment system (merchant payment) to Tourist whereas Tourist can not register for mBoB.\n
+3. Key Features:\n
+Key features of goBoB is Splitting of Bills and Request & Send money whereas mBoB focuses more on Account related features.\n
+4. Age Eligibility:\n
+Minors with a age ranging from 10-17 can register for goBoB and do basic minimal transactions whereas guardian have to undertake to enable transaction for minors in mBoB.\n
+5. Wider coverage:\n
+Besides facilitating the service to mBoB users/BoB account holders, goBoB can cover non-BoB account holders besides covering the unbanked portion of the Nation."
+
+  utter_gobob_customers:
+  - text: "You can download the goBoB application and can register instantly. However, you can also visit nearest BoB branch offices to register for the service."
+
+  utter_gobob_cost:
+  - text: "Registration is free. There are no charges for other services except for adding money from cards and transfer to bank accounts. A convenience fee of 3.5% will be charged while loading your wallet using cards and 2% will be charged while sending money to your bank accounts."
+
+  utter_gobob_security:
+  - text: "goBoB is very secure service. In fact, mobile wallets are much safer than carrying around your wallet. goBoB has multiple security such as fingerprint or M-Pin to login and T-Pin to authorize any transactions."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
