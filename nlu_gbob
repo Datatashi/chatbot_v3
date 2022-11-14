@@ -1,0 +1,147 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+##################################################
+- intent: gobob_download
+  examples: |
+    - WHERE CAN I DOWNLOAD goBoB MOBILE APPLICATION FROM?
+    - I want to download gobob app
+    - How can I download gobob app?
+    - Where can I get gobob?
+
+- intent: gobob_register
+  examples: |
+    - HOW TO REGISTER FOR goBoB WALLET?
+    - I want register for gobob
+    - Could you help me to register gobob
+    - where can I register gobob
+
+- intent: gobob_features
+  examples: |
+    - What are the features in goBoB?
+    - I want to know more about gobob features
+    - How many feature are there in gobob
+    - features available in gobob.
+
+- intent: gobob_benefit
+  examples: |
+    - what are benefits of goBoB
+    - How many benefits are there for using gobob
+    - benefit of using gobob service?
+    - Is gobob good service?
+
+- intent: gobob_mbob
+  examples: |
+    - What are difference between goBoB and mbob
+    - I want to know difference between mbob and gobob
+    - Tell me why gobob over mbob
+    - good and bad of gobob and mbob?
+
+- intent: gobob_customers
+  examples: |
+    - DIFFERENT TYPES OF CUSTOMERS AND THEIR LIMITS gobob?
+    - How many customer types are there for gobob
+    - who are the customer of gobob
+    - what is my customer type for gobob
+
+- intent: gobob_cost
+  examples: |
+    - CHARGES FOR USING goBoB
+    - How much do I pay for using gobob
+    - Do I have to pay for gobob service?
+    - Is gobob free?
+
+- intent: gobob_security
+  examples: |
+    - SECURITY of gobob
+    - is gobob safe?
+    - How safe is gobob?
+    - I feel unsecure using gobob
