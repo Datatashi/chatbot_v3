@@ -1,0 +1,716 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+#####################################
+- intent: mbob
+  examples: |
+    - what is mbob?
+    - Can you tell me about mbob?
+    - what is function of mbob
+    - I want to know about mbob
+
+- intent: mbob_os
+  examples: |
+    - Does mBoB support in all the available Operating Systems?
+    - which mobile support mbob?
+
+- intent: mbob_min_os
+  examples: |
+    - What is the minimum Operating System versions required for mBoB?
+    - What is Operating System required for mBoB?
+
+- intent: mbob_charges
+  examples: |
+    - Are there any charges for using mBoB?
+    - how much charges for mBoB?
+
+- intent: mbob_download
+  examples: |
+    - How and from where do I download mBoB?
+    - How to download mBoB?
+
+- intent: mbob_space
+  examples: |
+    - Will mBoB app occupy too much space on my phone?
+    - my phone is hanging due to mBoB.
+    - I don't have enough space for mBoB.
+    - how much mb required for mBoB?
+    - What is the memory required by mBoB?
+
+- intent: mbob_outside
+  examples: |
+    - Can I use mBoB outside Bhutan?
+    - I am outside bhutan how to use mBoB?
+    - I am in australia how to use mBoB?
+
+- intent: mbob_no_internet
+  examples: |
+    - Can I use mBoB without internet connection?
+    - I don't have internet connection to connect mbob.
+
+- intent: mbob_sim
+  examples: |
+    - Can I use the SIM of any service provider for mBoB?
+    - Can I use B mobile for mBoB?
+    - Can I use tashi cell for mBoB?
+
+- intent: mbob_online
+  examples: |
+    - Can i register online?
+    - How to apply online to register for mbob?
+
+- intent: mbob_start
+  examples: |
+    - How do I start using mBoB?
+    - I am new to mbob.
+    - how to use mBoB?
+    - I don't know how to use mBoB.
+    - mbob is complicated.
+
+- intent: mbob_pin
+  examples: |
+    - What is M-Pin and T-Pin?
+    - I want to know about M-Pin and T-Pin.
+    - my mpin is block
+    - how to reset mpin
+    - I can't remember my m-pin
+    - I forgot my t-pin
+    - I lost tpin
+
+- intent: m_pin
+  examples: |
+    - Can I change my M-Pin/T-Pin in mBoB?
+    - Is it possible to change mpin in mbob?
+    - Where can I find mpin
+
+- intent: mbob_wrong_mpin
+  examples: |
+    - What happens when I have used wrong M-Pin for several times?
+    - I am using mpin for several times for mbob
+    - I have a problem for using mpin for many times
+
+- intent: mbob_unblock_mpin
+  examples: |
+    - When access is blocked due to wrong usage of M-Pin, how do I unblock?
+    - access to mbob is blocked how do I unblock
+    - can i unblock the mbob 
+    - How can I unblock the mbob as I have entered a wrong mpin
+
+- intent: mbob_mpin_after_block
+  examples: |
+    - Can I continue to use same M-Pin after blocking the access?
+    - If I use same mpin after mbob is block will it work
+    - can mbob work with the same mpin?
+
+- intent: mpin_forgotten
+  examples: |
+    - I have forgotten M-Pin, what is the process?
+    - I want to change M-Pin and T-Pin.
+    - my mpin is block
+    - how to reset mpin
+    - I can't remember my m-pin
+
+- intent: mbob_tpin
+  examples: |
+    - I have forgotten T-Pin, what is the process?
+    - I forgot my t-pin
+    - I lost tpin
+
+- intent: mbob_user
+  examples: |
+    - I have forgotten the user ID.
+    - my user id is not working.
+    - how to reset user id.
+    - I can't remember my user id
+    - I lost user id
+
+- intent: mbob_dzongkha
+  examples: |
+    - Is mbob available in dzongkha?
+    - I want to use mbob in dzongkha.
+    - Can I use mbob in dzongkha?
+    - is there mbob for dzongkha?
+    - I want mbob for monks.
+
+- intent: mbob_link
+  examples: |
+    - What types of account can I link in mBoB?
+    - Different accounts in mBoB.
+    - I have two accounts and I want them in mBoB.
+    - Can I use second account in mBoB.
+    - I have current account and I want to link in mBoB.
+
+- intent: mbob_joint
+  examples: |
+    - Can a joint account be operated through mBoB?
+    - I want to use joint account in mBoB.
+    - How to use joint account in mBoB?
+    - mbob have joint account to use.
+    - how a joint account be operated in mBoB?
+
+- intent: mbob_link_joint
+  examples: |
+    - How do I link joint account in mBoB?
+    - can I link joint account in mBoB?
+    - joint account can't be linked in mBoB.
+    - I have problem in mbob with linking joint account.
+    - can you help me with linking account joint in mbob?
+
+- intent: mbob_minor
+  examples: |
+    - my son is 10 years old and want mbob.
+    - can minor use mbob?
+    - Can a minor account be provided with mBoB service?
+    - is there a minor account in mbob?
+    - my daughter is 15 and I want her to have mbob.
+    - my daughter is 16 and I want her to have mbob.
+    - my daughter is 17 and I want her to have mbob.
+
+- intent: mbob_minor_register
+  examples: |
+    - Can a minor customer be able to register directly through App?
+    - I am minor and I want to register through mBoB.
+    - I am underage to register for mbob
+    - is there a way to register for underage in mbob?
+    - underage and minor registration for mbob.
+
+- intent: mbob_fingerprint
+  examples: |
+    - Can i use fingerprint as an alternative login option in mbob?
+    - How to use fingerprint to login to mbob
+    - mbob login using fingerprint
+    - steps to login using fingerprint method
+    - fingerprint login problem
+    - I have issue with fingerprint login
+
+- intent: mbob_services
+  examples: |
+    - What services are available in mBoB?
+    - how many services are in mBoB?
+    - services available in mBoB.
+    - I want to know about the services in mbob
+    - I don't know services of mbob.
+
+- intent: mbob_details
+  examples: |
+    - Are account details in mbob stored on my mobile device?
+    - account details should store in mbob and phone.
+    - Do you think account would be stored in phone from mbob
+    - I don't want to store mbob account details in phone.
+    - how to look for mbob account details in phone
+
+- intent: mbob_func_transfer
+  examples: |
+    - What types of Funds Transfers can be initiated through mBoB?
+    - I want to transfer fund through mbob
+    - where can I transfer fund in mbob
+    - can I transfer money in mbob
+    - how can i transfer money in mbob?
+
+- intent: mbob_transaction
+  examples: |
+    - Can transaction be canceled or changed through mBoB?
+    - transaction in mbob should be cancelled
+    - I want to cancel the transaction in mbob
+    - I want to cancel the money transfer through mbob
+    - How to cancel the transaction by mbob
+
+- intent: mbob_pay
+  examples: |         
+    - can I pay bills through mbob?
+    - pay a bill by mbob
+    - where can i pay bill in mbob
+    - payment of bill in mbob
+    - bill payment in mbob is not found
+
+- intent: mbob_report_transaction
+  examples: |
+    - How do I report a problem with mBoB transaction?
+    - I want to report mbob transaction.
+    - my mbob transaction failed
+    - what should I do if mbob transaction fail
+    - how to recover for mbob transaction fail
+
+- intent: mbob_protect
+  examples: |
+    - How important is to protect your mobile device for mbob?
+    - Is it important to protect mbob in phone?
+    - Why to protect phone?
+    - should I clean the phone for protection?
+    - Do you provide protection for phone.
+
+- intent: mbob_stolen
+  examples: |
+    - What happens if my mobile device is lost or stolen?
+    - Can you find my phone which is stolen?
+    - If I lose my phone where to find it.
+    - What will happen to the stolen phone
+    - if phone is lost how to report.
+
+- intent: mbob_change
+  examples: |
+    - What should I do if I change my mobile device or number or service provider?
+    - I want to change the mobile number.
+    - Do you have facility to change the mobile number.
+    - I am changing the mobile service provider
+    - update the service provider for the phone
+
+- intent: mbob_external
+  examples: |
+    - What is the process if wanted to use mBoB app from different device
+    - how to use mbob from other phone.
+    - I want to use different phone for mbob.
+    - I have mbob in other phone.
+    - I don't want to change phone but want to use mbob
+
+- intent: mbob_payment_merchant
+  examples: |
+    - How do I make payments to merchants with mbob?
+    - Do you know how to pay to merchants with mbob.
+    - I can't pay to a merchant with mbob
+    - merchant can't receive payment with mbob
+    - What to do if I pay to a merchant.
+
+- intent: mbob_wrong_transfer
+  examples: |
+    - How to prevent transfer to wrong account/transfer with wrong amount?
+    - I transfer to a wrong account in mbob
+    - I transfer a wrong amount in mbob.
+    - I want to stop transferring amount to a wrong account
+    - how to stop send wrong amount
+
+- intent: mbob_wrong_beneficiary
+  examples: |
+    - If transferred by mbob to wrong beneficiary, how do I receive my money back?
+    - I want my money back that was sent to a wrong person by mbob
+    - money was sent to a wrong person and I want my money by mbob
+    - A wrong person got my money return my money by mbob
+    - pay my money back if wrong person got my money by mbob
+
+- intent: mbob_report_undue
+  examples: |
+    - What and where to report if my account is credited with undue amount in mbob?
+    - I mbob a wrong account and I want to report it to the bank
+    - Where can I report for sending to a wrong account by mbob
+
+- intent: mbob_why_no_payment
+  examples: |
+    - When transferring to other bank account, why beneficiary doesn't receive the payment?
+    - Why is money is not able to receive my money sent by mbob
+    - How do I report if mbob can't transfer money to the person.
+
+- intent: mbob_no_receive
+  examples: |
+    - For other bank transfer, what should I do if beneficiary has not received the amount by mbob?
+    - I sent to a bank from bob but transaction by mbob was failed.
+    - what if other bank didn't receive money sent via mbob
+
+- intent: mbob_beneficiary_account_check
+  examples: |
+    - How do I confirm if the beneficiary account number is correctly provided or not in mbob?
+    - I want to know if the account number is correct in mbob
+    - I want to check if the account number is correct in mbob before transaction.
+
+- intent: mbob_complaint_fail_transfer
+  examples: |
+    - Do I need to raise any complaint for the failed interbank transactions by mbob?
+    - how to complain for failing interbank transaction by mbob?
+    - I failed transaction by mbob from bob to bnb I want to report
+    - where to report if I fail the transaction from bob to other bank by mbob
+
+- intent: mbob_interbank_reverse
+  examples: |
+    - Can the interbank transaction be reversed to the remitter account?
+    - i want to reverse the amount to the account holder
+    - how to transfer back to the remitter account
+
+- intent: mbob_redo_iferror
+  examples: |
+    - If any error is received while doing fund transfer, should I re-initiate?
+    - How to reinitiate if there is an error while fund transfer?
+    - I made mistake in transferring fund and I want to reinitiate
+
+- intent: mbob_userid
+  examples: |
+    - How do I get USER ID for mbob?
+    - I can't login to mbob using userid
+    - my userid is not working for mbob
+    - userid is forgotten for mbob
+    - userid is lost and can't remember mbob
+
+- intent: mbob_scan_pay
+  examples: |
+    - What are the advantages of using Scan & Pay in mbob?
+    - I want to know the good thing of using scan and pay in mbob
+    - mbob scan and pay is not good
+    - why should i use scan and pay mbob
+
+- intent: mbob_qr
+  examples: |
+    - Do I need to visit branch to avail QR code for mbob?
+    - Where to get the QR code for mbob
+    - QR code for mbob is not found where
+    - Can i send my someone to get my QR code?
+
+- intent: mbob_interbank_payment
+  examples: |
+    - Can the QR code generated through mbob be used to accept inter bank payments?
+    - QR code in my mbob can be accepted by other bank.
+    - is it possible for qr code of my mbob transfer to other bank
+
+- intent: mbob_otherbank_merchant
+  examples: |
+    - If I pay to other bank's merchant by way of scanning QR code and the amount is not credited, what should I do?
+    - If qr code transfer is not successful what to do.
+    - I fail to transfer to other bank with qr code
+
+- intent: mbob_qr_blank
+  examples: |
+    - What should I do when my QR code scanner comes blank?
+    - qr code is empty and blank
+    - I want to report for empty qr code
+
+- intent: mbob_when_scan
+  examples: |
+    - When should I use Scan & Pay in mbob?
+    - where should i use scan and pay by mbob?
+    - mbob scan and pay should be used when
+
+- intent: mbob_fix_recur
+  examples: |
+    - Can I open Recurring and Fixed Deposit account via mBoB?
+    - How can I open account for fixed deposoit with mbob
+    - I don't know how to open a fixed deposit in mbob
+
+- intent: mbob_deduct_recur
+  examples: |
+    - Will my monthly installment for recurring deposit account opened through mBoB be auto-deducted from my account?
+    - I want to deduct monthly installment from saving account with mbob
+    - can installment be transfer automatically to my recurring by mbob
+
+- intent: mbob_close_term
+  examples: |
+    - Can I close Recurring and Fixed deposit?
+    - how can I close term deposit in mbob?
+    - please close my recurring deposit in mbob
+    - I want to close fixed deposit in mbob
+
+- intent: mbob_termdeposit_not_closed
+  examples: |
+    - Is there any recurring or fixed deposit account that I cannot process closure from mBoB app?
+    - I want to check if any account is not closed from mbob
+    - i closed my fixed deposit from mbob and I want to check if it is done
+
+- intent: mbob_renewal_card
+  examples: |
+    - Can I apply for debit card replacement or renewal from mBoB?
+    - how to apply for replacement of card from mbob
+    - does mbob have services for renewal or replacement from mbob.
+
+- intent: mbob_replace_benefit
+  examples: |
+    - What is the advantage if applying the card replacement/renewal through mBoB app?
+    - is it good to apply for card from mbob for replacement or renewal
+    - Why to replace card from mbob
+
+- intent: mbob_donate
+  examples: |
+    - How do I donate to Covid fund from mbob?
+    - I want to donate to the covid fund from mbob
+    - mbob donation for covid 19 where
+
+- intent: mbob_statement
+  examples: |
+    - Can I request account statement online in mbob?
+    - Where can I get account statement online from mbob
+    - I want statement online in mbob
+  
+
+- intent: mbob_max_statement
+  examples: |
+    - What is the maximum period that I can request statement for mbob?
+    - maximum days for statement in mbob
+    - I want to get the statement of years from mbob
+    - how many days would the statement reflect in mbob
+
+- intent: mbob_email
+  examples: |
+    - How do I know if my email is updated or not in mbob?
+    - email is not updated in mbob
+    - mbob can't show the updated email
+    - where can i update the email address in mbob
+
+- intent: mbob_update_email
+  examples: |
+    - How do I update email address for receiving my account statement for mbob?
+    - where to update the email address in mbob
+    - mbob don't have update email
+
+- intent: mbob_cardless_atm
+  examples: |
+    - Do I need to have ATM card to use cardless withdrawal facility?
+    - I want to use cardless withdrawal with my atm
+    - cardless withdrawal with atm card is not working
+
+- intent: mbob_cardless_problem
+  examples: |
+    - I have recently registered for mBoB but cardless service isn't working. Why?
+    - why cardless is not working
+    - i have registered for cardless and it is not working again
+
+- intent: mbob_cardless_withdrawal
+  examples: |
+    - What is the limit for the cardless withdrawal from mBoB?
+    - how much money can i withdraw from mbob in a day
+    - one time withdrawal limit from mbob
+
+- intent: mbob_cardless_otherbank
+  examples: |
+    - Will mBoB cardless facility work to withdraw from other bank's ATMs?
+    - can i use cardless to withdraw from bnb atm
+    - can i withdraw frm punjab bank atm with cardless
+
+- intent: mbob_noaccount_atm
+  examples: |
+    - Can a person without having an account with BoB be able to withdraw cash through BoB ATM?
+    - If I don't have account but I want to take out money from atm
+    - atm can have facility to withdraw even if i don't have an account with bob
+
+- intent: mbob_delink
+  examples: |
+    - How can I add/delink account(s) through mBoB?
+    - I want to link accounts in mbob
+    - can i link two accounts in mbob?
+
+- intent: mbob_los
+  examples: |
+    - Can I check my loan outstanding balance in mbob?
+    - what is my loan outstanding balance in mbob
+    - what is the balance amount in loan in mbob
+
+- intent: mbob_loan_account
+  examples: |
+    - Can I close my loan account through mBoB?
+    - I want to close loan account through mbob
+    - is it possible to close loan through mbob?
+
+- intent: mbob_airticket
+  examples: |
+    - Can I pay for Drukair ticket in mbob?
+    - how to pay airticket in mbob?
+    - I want to pay for drukair with mbob
+
+- intent: mbob_features
+  examples: |
+    - How do I know for any new feature (s) added in mBoB?
+    - Do I get notify if a new feature is added in mbob
+    - if there is a new feature will I get an email
+
+- intent: mbob_reward
+  examples: |
+    - How does reward feature works in mbob?
+    - I want to get reward from mbob
+    - when do I get reward from mbob
+
+- intent: mbob_transfer_limit
+  examples: |
+    - What is the inter bank fund transfer limit ?
+    - is there any limit for inter bank fund transfer
+    - I want to transfer money from mbob for inter bank what is the limit
+
+- intent: mbob_customer_categories
+  examples: |
+    - What are the customer categories in mBoB?
+    - What are the different categories in mbob
+    - how many customer categories are there in mbob
+
+- intent: mbob_thumb
+  examples: |
+    - Who are thumbprint customers in mbob?
+    - What is thumbprint customer in mbob?
+    - I want thumbprint in mbob
+
+- intent: mbob_categories_limit
+  examples: |
+    - What are the fund transfer limits for these categories in mbob?
+    - I want to know fund transfer limit in each category mbob
+    - how much money can be transfer in each category in mbob
+
+- intent: mbob_categories_interbank
+  examples: |
+    - Will these category-based limit be applicable to interbank transaction as well in mbob?
+    - what is the limit for category for interbank transaction in mbob
+    - I want to know inter bank transaction limit for ca
+
+- intent: mbob_thumb_online_register
+  examples: |
+    - Can a thumbprint customer register directly online for mbob?
+    - can I register online with thumbprint for mbob
+    - how to register online for a thumbprint in mbob
+
+- intent: mbob_thumb_doc
+  examples: |
+    - What documents are required for thumbprint customers to register for mBoB?
+    - what are the documents required for thumbprint registration for mbob
+    - I want to know the requirement of documents for thumbprint registration
+
+- intent: mbob_thumb_cardless
+  examples: |
+    - Can a thumbprint customer avail cardless withdrawal facility in mBoB?
+    - I want to have mbob cardless with thumbprint
+    - I am a thumbprint and I want to know if cardless withdrawal is available for me.
+
+- intent: mbob_thumb_mpin
+  examples: |
+    - Can a thumbprint be able to reset M-Pin/T-Pin/Login device through mbob?
+    - Can I reset mpin and tpin with a thumbprint in mbob
+    - Is it possible to reset mpin and tpin if I have a thumbprint
+
+- intent: mbob_thumb_categories_limit
+  examples: |
+    - Can a thumbprint customer avail higher transaction limit by changing the category in mbob?
+    - I am a thumbprint customer and I want to have higher transaction limit after changnig the category in mbob
+    - If I change the category will I have a higher transaction limit for a thumbprint in mbob
+
+- intent: mbob_thumb_categories
+  examples: |
+    - How do I change my mBoB Category?
+    - I want to change mbob category
+    -How can I change the category for mbob
+
+- intent: mbob_premiums
+  examples: |
+    - What types of insurance premiums can I pay from mBoB?
+    - I want to know about the insurance premiums that can be paid from mbob
+    - what kind of insurance premium be paid from mbob
+
+- intent: mbob_report_stops
+  examples: |
+    - where should I report if my App suddenly stops working?
+    - my mbob stop functioning what to do
+    - I want to report for my mbob not working
+
+- intent: mbob_services_recharge
+  examples: |
+    - Is there any limit on amount for mobile recharge services for mbob?
+    - What is the mbob limit on amount for mobile recharge services
+    - how much can i use from mbob for mobile recharge services
+
+- intent: mbob_alarts
+  examples: |
+    - How do I ensure that transaction alerts are received from the bank on mbob?
+    - I am not getting alert from the bank on mbob
+    - I want transaction alerts from the bank when I use mbob
+
+- intent: mbob_fake
+  examples: |
+    - How do I avoid being the victim of fake mBoB screenshots?
+    - I am cheated by a fake screenshot of mbob
+    - Is there a way to find if a mbob screenshot is a fake
+
+- intent: mbob_update
+  examples: |
+    - Why mBoB App needs to be updated frequently?
+    - why do I have to update mbob
+    - I want to know the reason to update mbob
+
+- intent: mbob_over_cash
+  examples: |
+    - Why should I use mBoB over cash transaction?
+    - I want to use mbob over cash for good
+    - how is mbob better than cash transfer
+
+- intent: mbob_safety_tips
+  examples: |
+    - What are safety-tips for using mBoB?
+    - Is there safety method by bob for using mbob
+    - how to use mbob to be safe
