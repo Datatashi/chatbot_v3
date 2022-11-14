@@ -1,0 +1,273 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+########################################################################
+- intent: cards
+  examples: |
+    - What are the types of Cards offered by Bank of Bhutan Limited?
+    - Different kind of cards offered by BoB?
+    - all cards by bob.
+    - I want to know what cards are offered.
+
+- intent: card_avail_service
+  examples: |
+    - Who can avail BoB’s Card services?
+    - Who is eligible for bob card?
+    - I want to know who can get card services.
+
+- intent: card_security
+  examples: |
+    - Is the Bank of Bhutan Limited issued card secure?
+    - What is security for cards?
+    - is there any security issue with cards?
+
+- intent: card_avail
+  examples: |
+    - How do I Avail Debit Card?
+    - How can I get the debit card?
+    - I want to get debit card.
+
+- intent: card_choose
+  examples: |
+    - How do I choose a Credit Card?
+    - How to choose a credit card?
+    - I want to choose a credit card.
+    - What credit card if good for me?
+
+- intent: card_fee
+  examples: |
+    - Do I need to pay a joining fee to avail a credit card?
+    - Do I need to pay extra to get credit card?
+    - what are the charges of credit card?
+
+- intent: card_amount
+  examples: |
+    - How much can I borrow on Credit Card?
+    - I much money can I get on Credit card.
+    - Total amount in the credit card.
+
+- intent: card_wait_time
+  examples: |
+    - How long does it take to get a credit card?
+    - I have got my credit card.
+    - How long do i have to wait to get a credit card.
+    - wait time credit card.
+
+- intent: card_debt
+  examples: |
+    - Can I pay off my credit card debt early?
+    - I want to pay credit card debt.
+    - How do I pay credit card debt early.
+
+- intent: card_abroad
+  examples: |
+    - Can I use my credit card abroad?
+    - I am in australia and I want to use credit card.
+    - How to use credit card in abroad.
+
+- intent: card_difference
+  examples: |
+    - What’s the difference between a credit card and a prepaid card?
+    - I don't know credit card and debit card.
+    - main difference between credit and prepaid card.
+
+- intent: card_repayment
+  examples: |
+    - What happens if I can’t keep up with my repayments?
+    - If I don't pay in time what would happen.
+    - I failed to pay on time.
+
+- intent: card_withdraw
+  examples: |
+    - Will I be charged if I withdraw cash on my credit card?
+    - How much do I pay on credit card?
+
+
+- intent: card_charges
+  examples: |
+    - Do credit cards charge annual fees?
+    - Do I have to pay extra in a year for credit card?
+    - How much do I pay in a year for credit card?
+
+- intent: card_min
+  examples: |
+    - What is the minimum monthly repayment for credit card means?
+    - minimum charges for credit card.
+    - monthly charges for credit card.
+
+- intent: card_lose
+  examples: |
+    - What do I do if I lose my credit card?
+    - I lost my credit card.
+    - I want to replace my credit card.
+    - my credit card is damaged.
+
+- intent: card_working
+  examples: |
+    - What should I do if my Card is not working?
+    - What do I do if credit card is not working?
+    - credit card is not working.
+    - problem with credit card.
+    - can't login to credit card.
+
+- intent: card_debit_outside
+  examples: |
+    - Can my Debit Card be used for transactions outside Bhutan?
+    - Can I use debit card in india?
+    - Can I use debit card in nepal?
+
+
+- intent: card_prepaid
+  examples: |
+    - Card Limit on INR Prepaid Card per month and card validity?
+    - how much inr limit on prepaid card per month.
+    - total inr money I get per month in prepaid card.
+
+- intent: card_reload
+  examples: |
+    - How do I Reload my INR Prepaid Card?
+    - I want to refresh INR Prepaid Card?
+    - Load again my INR Prepaid Card?
+
+- intent: card_reload_charge
+  examples: |
+    - Will I be charged for reloading into my INR Prepaid Card?
+    - how much do I pay for reloading into my INR Prepaid Card?
+    - charge for reloading into my INR Prepaid Card?
+
+- intent: card_balance_claim
+  examples: |
+    - If I have a balance on my prepaid card, how do I claim it?
+    - I have a balance on prepaid card and I claim it?
+    - check balance on my prepaid card?
+
+- intent: card_benefit
+  examples: |
+    - Benefits of having a Credit Card?
+    - why Credit Card?
+    - what are Benefits of Credit Card?
+
+- intent: card_bill
+  examples: |
+    - How do I pay my credit card bill?
+    - I can't pay credit card bill.
+    - where to pay credit card bill?
+
+
+- intent: card_domestic_region
+  examples: |
+    - Where does Domestic Credit Card work?
+    - Which places Domestic Credit Card work?
+    - Can Domestic Credit Card work in india?
+    - Can Domestic Credit Card work in nepal?
+    - Can Domestic Credit Card work in thailand?
+
+
+- intent: card_max_limit
+  examples: |
+    - Maximum Card limit of Domestic Credit Card and its validity?
+    - limit of Domestic Credit Card?
+    - what is  Domestic Credit Card validity?
+
+
+- intent: card_debit_charges
+  examples: |
+    - Debit Card charges and fees while doing transactions in Bhutan, India, and Nepal?
+    - how much Debit Card charges and fees while doing transactions outside bhutan?
+    - Debit Card charges if I take out money in India and Nepal?
+
+- intent: domcard
+  examples: |
+    - what is domestic card?
+    - I can't get a domestic card.
+    - Where to register for domestic card.
+    - what are benefits for domestic card.
