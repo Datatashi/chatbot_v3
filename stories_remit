@@ -1,0 +1,71 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+#####################################################
+- story: remit
+  steps:
+  - intent: remit
+  - action: utter_remit
+
+- story: remit_acc
+  steps:
+  - intent: remit_acc
+  - action: utter_remit_acc
+
+- story: remit_channel
+  steps:
+  - intent: remit_channel
+  - action: utter_remit_channel
+
+- story: remit_open_acc
+  steps:
+  - intent: remit_open_acc
+  - action: utter_remit_open_acc
+
+- story: remit_access
+  steps:
+  - intent: remit_access
+  - action: utter_remit_access
+
+- story: remit_transfer
+  steps:
+  - intent: remit_transfer
+  - action: utter_remit_transfer
+
+- story: remit_withdrawal
+  steps:
+  - intent: remit_withdrawal
+  - action: utter_remit_withdrawal
+
+- story: remit_addition
+  steps:
+  - intent: remit_addition
+  - action: utter_remit_addition
+
