@@ -1,0 +1,169 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+###########################################################
+- intent: atmfacilities
+  examples: |
+    - what are the facilities offered through ATM?
+    - facilities atm.
+    - services through atm?
+    - different services through atm.
+    - facilities of atm.
+
+- intent: atmavail
+  examples: |
+    - how do i avail the atm card facility?
+    - atm application form.
+    - atm card application.
+    - new account opening for atm.
+    - how to get atm facility.
+
+- intent: atmeligibility
+  examples: |
+    - what is the eligibility for atm card facility?
+    - eligibility criteria.
+    - am I eligible to apply for atm?
+
+- intent: atmcharges
+  examples: |
+    - what are the charges for ATM card?
+    - how much do I pay for ATM?
+    - charges for atm?
+    - price of atm.
+    - What is the price of atm.
+    - Atm cost.
+
+- intent: atmreceive
+  examples: |
+    - How do I receive the ATM card?
+    - receive atm card.
+    - recive atm card.
+    - recieve atm card.
+    - How to receive the atm card?
+    - where to get the atm card?
+
+- intent: atmreplace
+  examples: |
+    - How do I get the replacement card?
+    - replace my atm card.
+    - atm card lost.
+    - atm card damage.
+    - replace old atm card.
+    - I lost my atm card
+    - how to renew atm card
+    - change my account of atm.
+    - change my pin number atm.
+    - how to change password of atm.
+    - my atm card is misplaced.
+
+- intent: atmwithdraw
+  examples: |
+    - What is the daily cash withdrawal limit?
+    - withdrawal of cash
+    - withdrawal limit of atm
+    - maximum amt for atm
+    - maximum limit to take out from atm.
+    - how much can I withdraw?
+
+- intent: atm_lost
+  examples: |
+    - what is fast cash?
+    - fast cash.
+    - fast atm
+    - faster withdrawal
+
+- intent: atmfast
+  examples: |
+    - what is fast cash?
+    - fast cash.
+    - fast atm
+    - faster withdrawal
